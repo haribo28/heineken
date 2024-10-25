@@ -1,0 +1,226 @@
+@charset 'utf-8';
+
+.visual-title {
+    font-family: visual-font;
+    font-size: 44.8rem;
+    position: absolute;
+    color: #fff;
+    top: 170px;
+    left: 246px;
+}
+
+.visual figure {
+    width: 72rem;
+    height: 72rem;
+    position: absolute;
+    top: 170px;
+    left: 597px;
+}
+
+.sec-title {
+    margin-top: 21.3rem;
+    color: var(--sub-color);
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.main-title {
+    margin-top: 7.2rem;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #000;
+}
+
+.sub-title {
+    margin-top: 1.8rem;
+    font-size: 2.5rem;
+    color: var(--gray1);
+}
+
+/* our story */
+.story-slider-wrap {
+    height: 58rem;
+}
+
+.story-slider-wrap .story-slider {
+    height: 100%;
+}
+
+/* 커스텀 버튼 */
+.story-pagination {
+    width: 8.6rem;
+    height: 3.2rem;
+    text-align: center;
+
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: var(--gray1);
+    margin: 0 auto;
+    padding: 0.28rem 2.2rem;
+    border: 1px solid var(--main-color);
+    border-radius: 70px;
+}
+
+.swiper-pagination-current {
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.story-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 13.8rem;
+}
+
+.story-con figure {
+    width: 69rem;
+    height: 48rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.story-con dl {
+    width: 57.2rem;
+}
+
+.story-con dl dt {
+    font-weight: 600;
+    font-size: 4rem;
+    color: var(--main-color);
+}
+
+.story-con dl dd {
+    margin-top: 2.3rem;
+    font-size: 2.4rem;
+    color: var(--gray1);
+}
+
+/* products */
+.our-products {
+    position: relative;
+}
+
+.products-slider-wrap {
+    margin-top: 6.5rem;
+    height: 62.5rem;
+}
+
+.products-slider-wrap .products-slider {
+    height: 100%;
+}
+
+/* 커스텀 버튼 */
+.products-prev {
+    background-image: url(../img/arrow-maincolor.svg);
+    transform: rotateY(180deg);
+    width: 7.6rem;
+    height: 7.6rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 18.4rem;
+}
+
+.products-next {
+    background-image: url(../img/arrow-maincolor.svg);
+    width: 7.6rem;
+    height: 7.6rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 18.4rem;
+}
+
+.product-item {
+    width: 45.3rem;
+    height: 67.5rem;
+}
+
+.product-item figure {
+    margin: 0 auto;
+    width: 12rem;
+    height: 41.3rem;
+}
+
+.product-item .can {
+    margin: 0 auto;
+    width: 12rem;
+    height: 29rem;
+    margin-top: 12.2rem;
+}
+
+.product-text {
+    /* width: 100%; */
+    margin-top: 3.4rem;
+    width: 40rem;
+}
+
+.product-text strong {
+    font-weight: 600;
+    font-size: 3rem;
+    color: var(--main-color);
+}
+
+.product-text p {
+    margin-top: 3rem;
+    font-size: 2rem;
+    color: var(--gray1);
+}
+
+/* 이벤트 */
+.events {
+    background: var(--main-color);
+    margin-top: 24rem;
+    padding: 1.69rem 0;
+}
+
+.events .inner {
+    width: 159.6rem;
+}
+
+.events .sec-title,
+.main-title,
+.sub-title {
+    color: #fff;
+}
+
+.our-title {
+}
+
+.events-container {
+    width: 45.3rem;
+}
+
+.events-container figure {
+    /* width: 45.3rem; */
+    height: 61rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.events-con {
+    width: 100%;
+}
+
+.event-icon {
+    background: url(../img/event-arrow.svg);
+    width: 3rem;
+    height: 2.9rem;
+}
+
+.event-text {
+    color: #fff;
+    margin-top: 4rem;
+}
+
+.event-text strong {
+    font-weight: 600;
+    font-size: 3.3rem;
+}
+
+.event-text p {
+    font-size: 1.7rem;
+    color: var(--gray2);
+}

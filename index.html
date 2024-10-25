@@ -4,27 +4,40 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>heineken</title>
+
+        <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/main.css" />
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="./js/jquery-3.7.1.min.js"></script>
+        <script src="./js/common.js"></script>
+        <script src="./js/main.js" defer></script>
     </head>
+
     <body>
         <a href="#main" class="hidden">본문 바로가기</a>
 
         <header id="header">
-            <nav>
-                <h1 class="header-logo"><i class="hidden">heineken</i></h1>
-                <div class="gnb">
-                    <ul>
+            <div class="inner">
+                <nav>
+                    <h1 class="header-logo"><i class="hidden">heineken</i></h1>
+                    <ul class="gnb">
                         <li><a href="#">브랜드</a></li>
                         <li><a href="#">제품</a></li>
                         <li><a href="#">이벤트</a></li>
                         <li><a href="#">캠페인</a></li>
                         <li><a href="#">스폰서쉽</a></li>
                     </ul>
-                </div>
-                <div class="header-icon">
-                    <button class="lang"><i class="hidden">language</i></button>
-                    <button class="search"><i class="hidden">search</i></button>
-                </div>
-            </nav>
+                    <div class="header-icon">
+                        <button class="lang"><i class="hidden">language</i></button>
+                        <button class="search"><i class="hidden">search</i></button>
+                    </div>
+                </nav>
+            </div>
         </header>
 
         <main id="main">
@@ -41,12 +54,12 @@
             <section class="our-story">
                 <div class="inner">
                     <h3 class="sec-title">Our Story</h3>
-                    <h4 class="main-title">세계 최고의 프리미엄, 라거 브랜드가 되기까지</h4>
+                    <h4 class="main-title">세계 최고의 프리미엄,<br />라거 브랜드가 되기까지</h4>
                     <div class="story-slider-wrap">
                         <div class="swiper story-slider">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <figure><i class="hidden">창립자이자 선구자</i></figure>
+                                <div class="swiper-slide story-con">
+                                    <figure><img src="./img/story-img1.jpg" alt="창립자이자 선구자" /></figure>
                                     <dl>
                                         <dt>1864</dt>
                                         <dd>
@@ -57,8 +70,10 @@
                                         </dd>
                                     </dl>
                                 </div>
-                                <div class="swiper-slide">
-                                    <figure><i class="hidden">제라드 하이네켄의 이름을 딴 첫 양조장</i></figure>
+                                <div class="swiper-slide story-con">
+                                    <figure>
+                                        <img src="./img/story-img2.jpg" alt="제라드 하이네켄의 이름을 딴 첫 양조장" />
+                                    </figure>
                                     <dl>
                                         <dt>1873</dt>
                                         <dd>
@@ -70,8 +85,8 @@
                                         </dd>
                                     </dl>
                                 </div>
-                                <div class="swiper-slide">
-                                    <figure><i class="hidden">하이네켄의 특별한 A-Yeast®</i></figure>
+                                <div class="swiper-slide story-con">
+                                    <figure><img src="./img/story-img3.jpg" alt="하이네켄의 특별한 A-Yeast®" /></figure>
                                     <dl>
                                         <dt>1886</dt>
                                         <dd>
@@ -82,8 +97,8 @@
                                         </dd>
                                     </dl>
                                 </div>
-                                <div class="swiper-slide">
-                                    <figure><i class="hidden">과학자이자 글로벌 혁신가</i></figure>
+                                <div class="swiper-slide story-con">
+                                    <figure><img src="./img/story-img4.jpg" alt="과학자이자 글로벌 혁신가" /></figure>
                                     <dl>
                                         <dt>1917</dt>
                                         <dd>
@@ -96,8 +111,8 @@
                                         </dd>
                                     </dl>
                                 </div>
-                                <div class="swiper-slide">
-                                    <figure><i class="hidden">부두에서의 파티</i></figure>
+                                <div class="swiper-slide story-con">
+                                    <figure><img src="./img/story-img5.jpg" alt="부두에서의 파티" /></figure>
                                     <dl>
                                         <dt>1933</dt>
                                         <dd>
@@ -109,23 +124,22 @@
                                         </dd>
                                     </dl>
                                 </div>
-                                <div class="swiper-slide">
-                                    <figure><i class="hidden">마케터이자 사업가</i></figure>
+                                <div class="swiper-slide story-con">
+                                    <figure><img src="./img/story-img6.jpg" alt="마케터이자 사업가" /></figure>
                                     <dl>
                                         <dt>1951</dt>
                                         <dd>
                                             알프레드 헨리 하이네켄은 최초로 하이네켄의 광고팀을 설립하며 가족 회사에서의
                                             첫 업적을 세웠습니다. 브랜드의 시그니처인 웃는 모양의 'e'와 녹색 컬러 모두
                                             그가 처음 도입했고, 오늘날 세계인들이 모두 알고 있는 별, 배너와 홉 덩굴의
-                                            하이네켄 로고를 개발한 당사자이기도 합니다. '마케팅의 시대'가 오기도 전에
-                                            이미 마케팅의 천재였던 알프레드 헨리 하이네켄. "저는 맥주를 팔지 않습니다.
+                                            하이네켄 로고를 개발한 당사자이기도 합니다. "저는 맥주를 팔지 않습니다.
                                             즐거움을 팔죠"라고 말한 그의 명언은 현재까지 전해 내려오는 하이네켄의
                                             모토입니다.
                                         </dd>
                                     </dl>
                                 </div>
-                                <div class="swiper-slide">
-                                    <figure><i class="hidden">월드 보틀 (World Bottle)</i></figure>
+                                <div class="swiper-slide story-con">
+                                    <figure><img src="./img/story-img7.jpg" alt="월드 보틀 (World Bottle)" /></figure>
                                     <dl>
                                         <dt>1963</dt>
                                         <dd>
@@ -133,29 +147,26 @@
                                             보틀 역시 하이네켄의 창의적인 발상을 잘 보여주는 예입니다. 혁신적인 디자인의
                                             월드 보틀은 집을 지을 때 쓸 수 있는 벽돌로 재사용할 수 있게 만들어져,
                                             쓰레기를 줄이고 효율적인 업사이클링을 가능하게 하는 의도로 고안되었습니다.
-                                            '더 나은 미래를 양조하기' 프로젝트들 중 최초의 아이디어였으나 혁신은 역시
-                                            쉽지 않았죠. 1965년 시험 생산 후 기술적인 장애물에 부딪혀 아쉽게도 실제로
-                                            개발되지는 못했습니다.
+                                            1965년 시험 생산 후 기술적인 장애물에 부딪혀 아쉽게도 실제로 개발되지는
+                                            못했습니다.
                                         </dd>
                                     </dl>
                                 </div>
-                                <div class="swiper-slide">
-                                    <figure><i class="hidden">스폰서쉽의 시대</i></figure>
+                                <div class="swiper-slide story-con">
+                                    <figure><img src="./img/story-img8.jpg" alt="스폰서쉽의 시대" /></figure>
                                     <dl>
                                         <dt>1990</dt>
                                         <dd>
                                             하이네켄은 오랜 세월 동안 여러 방면에서 전 세계의 팬들과 소통해왔습니다.
                                             비록 규모는 커졌지만, 여전히 완벽을 추구하고 소비자 한 명 한 명의 니즈를
-                                            맞추고자 노력하는 마인드를 지키고 있다는 사실이 자랑스럽습니다. 우리는 늘
-                                            대중과 소통할 수 있는 새롭고 혁신적인 방법을 찾고 있습니다. 그 방법 중
-                                            하나가 바로 다양한 행사에 스폰서로 참여하는 것입니다. 고객이 있는 곳에 함께
-                                            존재하며, 라이프스타일의 일부가 되고자 하는 것이 하이네켄이 스폰서쉽을
-                                            꾸준히 진행하는 이유입니다.
+                                            맞추고자 노력하는 마인드를 지키고 있다는 사실이 자랑스럽습니다. 고객이 있는
+                                            곳에 함께 존재하며, 라이프스타일의 일부가 되고자 하는 것이 하이네켄이
+                                            스폰서쉽을 꾸준히 진행하는 이유입니다.
                                         </dd>
                                     </dl>
                                 </div>
-                                <div class="swiper-slide">
-                                    <figure><i class="hidden">지속가능한 사업</i></figure>
+                                <div class="swiper-slide story-con">
+                                    <figure><img src="./img/story-img9.jpg" alt="지속가능한 사업" /></figure>
                                     <dl>
                                         <dt>2002</dt>
                                         <dd>
@@ -169,6 +180,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- 커스텀버튼 -->
+                        <div class="story-pagination"></div>
                     </div>
                 </div>
             </section>
@@ -182,7 +195,7 @@
                         <h4 class="main-title">별, 그 이상의 가치</h4>
                         <p class="sub-title">아이코닉한 맥주 브랜드의 대명사, 하이네켄.</p>
                     </div>
-                    <div class="products-slider-con">
+                    <div class="products-slider-wrap">
                         <div class="swiper products-slider">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide product-item">
@@ -210,7 +223,9 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide product-item">
-                                    <figure><img src="./img/product-img4.png" alt="하이네켄 오리지널 캔" /></figure>
+                                    <figure class="can">
+                                        <img src="./img/product-img4.png" alt="하이네켄 오리지널 캔" />
+                                    </figure>
                                     <div class="product-text">
                                         <strong>하이네켄 오리지널 캔</strong>
                                         <p>
@@ -220,14 +235,18 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide product-item">
-                                    <figure><img src="./img/product-img5.png" alt="하이네켄 0.0 캔" /></figure>
+                                    <figure class="can">
+                                        <img src="./img/product-img5.png" alt="하이네켄 0.0 캔" />
+                                    </figure>
                                     <div class="product-text">
                                         <strong>하이네켄 0.0 캔</strong>
                                         <p>최고의 맛을 잃지 않은 상태의 신선한 캔 맥주.</p>
                                     </div>
                                 </div>
                                 <div class="swiper-slide product-item">
-                                    <figure><img src="./img/product-img6.png" alt="하이네켄 실버 캔" /></figure>
+                                    <figure class="can">
+                                        <img src="./img/product-img6.png" alt="하이네켄 실버 캔" />
+                                    </figure>
                                     <div class="product-text">
                                         <strong>하이네켄 실버 캔</strong>
                                         <p>한국인의 입맛에 맞춘 깔끔한 프리미엄 라거 하이네켄 실버 캔.</p>
@@ -235,6 +254,9 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- 커스텀 버튼 -->
+                        <button type="button" class="products-prev"></button>
+                        <button type="button" class="products-next"></button>
                     </div>
                 </div>
             </section>
@@ -247,41 +269,59 @@
                     <div class="our-title">
                         <h4 class="main-title">하이네켄의 마법</h4>
                         <p class="sub-title">
-                            맥주의 품질과 맛을 전달하는 데만 그쳤다면 그것은 하이네켄의 방식이 아니죠.
+                            맥주의 품질과 맛을 전달하는 데만 그쳤다면<br />그것은 하이네켄의 방식이 아니죠.
                         </p>
                     </div>
-                    <div class="events-con">
-                        <figure><img src="" alt=""></figure>
-                        <div class="event-text">
-                            <strong>크리덴셜 이벤트</strong>
-                            <p>
-                                우리의 오랜 정성만큼, 더 길어지는 첫 모금의 감탄. 즐거움 가득한 첫 모금의 순간으로
-                                초대합니다.
-                            </p>
+
+                    <div class="events-container">
+                        <div class="events-con">
+                            <figure><img src="./img/event-img1.jpg" alt="크리덴셜 이벤트" /></figure>
+                            <div>
+                                <div class="event-text">
+                                    <strong>크리덴셜 이벤트</strong>
+                                    <p>
+                                        우리의 오랜 정성만큼, 더 길어지는 첫 모금의 감탄. 즐거움 가득한 첫 모금의
+                                        순간으로 초대합니다.
+                                    </p>
+                                </div>
+                                <div class="event-icon"><i class="hidden">바로가기</i></div>
+                            </div>
                         </div>
-                        <div class="events-img"><i class="hidden">하이네켄 풋볼 캠페인</i></div>
-                        <div class="event-text">
-                            <strong>하이네켄 풋볼 캠페인</strong>
-                            <p>
-                                하이네켄® 브랜드는 UEFA® 챔피언스리그(UCL)와 여자 챔피언스리그(UWCL)의 공식 스폰서로서,
-                                2024년 더욱 아이코닉하고 의미있는 캠페인을 선보입니다.
-                            </p>
+
+                        <div class="events-con">
+                            <figure><img src="./img/event-img2.jpg" alt="하이네켄 풋볼 캠페인" /></figure>
+                            <div class="event-text">
+                                <strong>하이네켄 풋볼 캠페인</strong>
+                                <p>
+                                    하이네켄® 브랜드는 UEFA® 챔피언스리그(UCL)와 여자 챔피언스리그(UWCL)의 공식
+                                    스폰서로서, 2024년 더욱 아이코닉하고 의미있는 캠페인을 선보입니다.
+                                </p>
+                            </div>
+                            <div class="event-icon"><i class="hidden">바로가기</i></div>
                         </div>
-                        <div class="events-img"><i class="hidden">하이네켄 150주년 캠페인</i></div>
-                        <div class="event-text">
-                            <strong>하이네켄 150주년 캠페인</strong>
-                            <p>
-                                전세계의 사람들이 하이네켄을 즐기는 다양한 방법들에 대해 이야기해보는 거에요. 결국 이건
-                                150년 동안 이어져 온 '즐거운 경험'에 대한 이야기이니까요. 어떤 방식으로든.
-                            </p>
+
+                        <div class="events-con">
+                            <figure><img src="./img/event-img3.jpg" alt="하이네켄 150주년 캠페인" /></figure>
+                            <div class="event-text">
+                                <strong>하이네켄 150주년 캠페인</strong>
+                                <p>
+                                    전세계의 사람들이 하이네켄을 즐기는 다양한 방법들에 대해 이야기해보는 거에요. 결국
+                                    이건 150년 동안 이어져 온 '즐거운 경험'에 대한 이야기이니까요. 어떤 방식으로든.
+                                </p>
+                            </div>
+                            <div class="event-icon"><i class="hidden">바로가기</i></div>
                         </div>
-                        <div class="events-img"><i class="hidden">Hi네캔 포차 팝업스토어</i></div>
-                        <div class="event-text">
-                            <strong>Hi네캔 포차 팝업스토어</strong>
-                            <p>
-                                우리는 Hi네캔 포차를 오픈했습니다. 포장마차는 한국인의 희로애락을 대표하며, ‘좋은 추억이
-                                깃든 시간’을 상징하는 공간이기 때문이죠.
-                            </p>
+
+                        <div class="events-con">
+                            <figure><img src="./img/event-img4.jpg" alt="Hi네캔 포차 팝업스토어" /></figure>
+                            <div class="event-text">
+                                <strong>Hi네캔 포차 팝업스토어</strong>
+                                <p>
+                                    우리는 Hi네캔 포차를 오픈했습니다. 포장마차는 한국인의 희로애락을 대표하며, ‘좋은
+                                    추억이 깃든 시간’을 상징하는 공간이기 때문이죠.
+                                </p>
+                            </div>
+                            <div class="event-icon"><i class="hidden">바로가기</i></div>
                         </div>
                     </div>
                 </div>
@@ -290,101 +330,107 @@
 
             <!-- s:encouraging-responsibility -->
             <section class="encouraging-responsibility">
-                <h3 class="sec-title">Encouraging responsibility</h3>
-                <h4 class="main-title">책임감 있는 음주 문화</h4>
-                <div class="encouraging-con">
-                    <div class="encouraging-text">
-                        <div class="encouraging-icon"></div>
-                        <dl>
-                            <dt>속을 든든히 채우세요.</dt>
-                            <dd>
-                                빈속에 마시지 마세요. 음주 전에 되도록이면 탄수화물이 들어간 음식을 먹고, 술을 마시는
-                                중에도 중간 중간에 안주를 먹도록 합니다. 음식을 먹으면 알코올 흡수 속도도 늦춰지고, 더
-                                신나게 즐길 수 있는 에너지도 복돋워줍니다.
-                            </dd>
-                        </dl>
-                    </div>
-                    <div class="encouraging-text">
-                        <div class="encouraging-icon"></div>
-                        <dl>
-                            <dt>물을 많이 드세요.</dt>
-                            <dd>
-                                술과 물을 번갈아 가며 마셔보세요. 물은 체수분을 보충해 주고, 술을 마시는 속도도
-                                늦춰줍니다. 그리고 잠자리에 들기 전에 꼭 물 한 잔을 드세요.
-                            </dd>
-                        </dl>
-                    </div>
-                    <div class="encouraging-text">
-                        <div class="encouraging-icon"></div>
-                        <dl>
-                            <dt>잔을 계속 채우지 마세요.</dt>
-                            <dd>
-                                잔에 남은 술을 다 마시기도 전에 계속 채우면, 술을 얼마나 마셨는지 계산하기 힘들어집니다.
-                            </dd>
-                        </dl>
-                    </div>
-                    <div class="encouraging-text">
-                        <div class="encouraging-icon"></div>
-                        <dl>
-                            <dt>여성이라면 더 조심하세요.</dt>
-                            <dd>
-                                여성의 신체는 남성에 비해 체수분율이 더 낮기 때문에 알코올의 영향을 더 많이 받는다는
-                                것을 기억하세요.
-                            </dd>
-                        </dl>
-                    </div>
-                    <div class="encouraging-text">
-                        <div class="encouraging-icon"></div>
-                        <dl>
-                            <dt>운전자를 미리 지정하세요.</dt>
-                            <dd>
-                                친구들과 함께 누가 술을 마시지 않고 운전을 할 것인지 집을 나서기 전에 미리 정하거나,
-                                귀가할 수 있는 택시비가 충분히 있는지 확인하세요.
-                            </dd>
-                        </dl>
-                    </div>
-
-                    <div class="encouraging-img">
-                        <figure><img src="#" alt="속을 든든히 채우세요." /></figure>
-                        <figure><img src="#" alt="물을 많이 드세요." /></figure>
-                        <figure><img src="#" alt="잔을 계속 채우지 마세요." /></figure>
-                        <figure><img src="#" alt="여성이라면 더 조심하세요." /></figure>
-                        <figure><img src="#" alt="운전자를 미리 지정하세요." /></figure>
+                <div class="inner">
+                    <h3 class="sec-title">Encouraging responsibility</h3>
+                    <h4 class="main-title">책임감 있는 음주 문화</h4>
+                    <div class="encouraging-con">
+                        <div class="encouraging-text">
+                            <div class="encouraging-icon"></div>
+                            <dl>
+                                <dt>속을 든든히 채우세요.</dt>
+                                <dd>
+                                    빈속에 마시지 마세요. 음주 전에 되도록이면 탄수화물이 들어간 음식을 먹고, 술을
+                                    마시는 중에도 중간 중간에 안주를 먹도록 합니다. 음식을 먹으면 알코올 흡수 속도도
+                                    늦춰지고, 더 신나게 즐길 수 있는 에너지도 복돋워줍니다.
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="encouraging-text">
+                            <div class="encouraging-icon"></div>
+                            <dl>
+                                <dt>물을 많이 드세요.</dt>
+                                <dd>
+                                    술과 물을 번갈아 가며 마셔보세요. 물은 체수분을 보충해 주고, 술을 마시는 속도도
+                                    늦춰줍니다. 그리고 잠자리에 들기 전에 꼭 물 한 잔을 드세요.
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="encouraging-text">
+                            <div class="encouraging-icon"></div>
+                            <dl>
+                                <dt>잔을 계속 채우지 마세요.</dt>
+                                <dd>
+                                    잔에 남은 술을 다 마시기도 전에 계속 채우면, 술을 얼마나 마셨는지 계산하기
+                                    힘들어집니다.
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="encouraging-text">
+                            <div class="encouraging-icon"></div>
+                            <dl>
+                                <dt>여성이라면 더 조심하세요.</dt>
+                                <dd>
+                                    여성의 신체는 남성에 비해 체수분율이 더 낮기 때문에 알코올의 영향을 더 많이 받는다는
+                                    것을 기억하세요.
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="encouraging-text">
+                            <div class="encouraging-icon"></div>
+                            <dl>
+                                <dt>운전자를 미리 지정하세요.</dt>
+                                <dd>
+                                    친구들과 함께 누가 술을 마시지 않고 운전을 할 것인지 집을 나서기 전에 미리 정하거나,
+                                    귀가할 수 있는 택시비가 충분히 있는지 확인하세요.
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="encouraging-img">
+                            <figure><img src="./img/encouraging-img1.jpg" alt="속을 든든히 채우세요." /></figure>
+                            <figure><img src="./img/encouraging-img2.jpg" alt="물을 많이 드세요." /></figure>
+                            <figure><img src="./img/encouraging-img3.jpg" alt="잔을 계속 채우지 마세요." /></figure>
+                            <figure><img src="./img/encouraging-img4.jpg" alt="여성이라면 더 조심하세요." /></figure>
+                            <figure><img src="./img/encouraging-img5.jpg" alt="운전자를 미리 지정하세요." /></figure>
+                        </div>
                     </div>
                 </div>
             </section>
             <!-- //e:encouraging-responsibility -->
 
             <section class="banner">
-                <iframe src="./video/banner-video.mp4" frameborder="0"></iframe>
-                <div class="banner-con">
-                    <div>
-                        <p>If you’re driving,</p>
-                        <strong class="banner-title">Don’t drink this.</strong>
-                        <p class="warring">
-                            경고: 지나친 음주는 뇌졸중, 기억력 손상이나 치매를 유발합니다. 임신 중 음주는 기형아 출생
-                            위험을 높입니다. 만 19세 미만 컨텐츠 공유 금지.
-                        </p>
+                <div class="inner">
+                    <iframe src="./video/banner-video.mp4"></iframe>
+                    <div class="banner-con">
+                        <div>
+                            <p>If you’re driving,</p>
+                            <strong class="banner-title">Don’t drink this.</strong>
+                            <p class="warring">
+                                경고: 지나친 음주는 뇌졸중, 기억력 손상이나 치매를 유발합니다. 임신 중 음주는 기형아
+                                출생 위험을 높입니다. 만 19세 미만 컨텐츠 공유 금지.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
 
         <footer id="footer">
-            <div class="foot-logo"><i class="hidden">heineken</i></div>
-            <address>
-                <div class="foot-con">
-                    <p>대표자 : 바이니오미카엘크리스티안</p>
-                    <p>주소 : 서울 강남구 테헤란로114길 38, 11층</p>
-                    <p>전화 : 02) 1234-5678</p>
-                    <p class="Copyright">© 2023 Copyright HEINEKEN KOREA INC. All Rights Reserved</p>
-                </div>
-                <ul class="foot-sns">
-                    <li><i class="hidden">facebook</i></li>
-                    <li><i class="hidden">instagram</i></li>
-                    <li><i class="hidden">x</i></li>
-                </ul>
-            </address>
+            <div class="inner">
+                <div class="foot-logo"><i class="hidden">heineken</i></div>
+                <address>
+                    <div class="foot-con">
+                        <p>대표자 : 바이니오미카엘크리스티안</p>
+                        <p>주소 : 서울 강남구 테헤란로114길 38, 11층</p>
+                        <p>전화 : 02) 1234-5678</p>
+                        <p class="Copyright">© 2023 Copyright HEINEKEN KOREA INC. All Rights Reserved</p>
+                    </div>
+                    <ul class="foot-sns">
+                        <li><i class="hidden">facebook</i></li>
+                        <li><i class="hidden">instagram</i></li>
+                        <li><i class="hidden">x</i></li>
+                    </ul>
+                </address>
+            </div>
         </footer>
 
         <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
