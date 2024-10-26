@@ -114,6 +114,7 @@
 /* 커스텀 버튼 */
 .products-prev {
     background-image: url(../img/arrow-maincolor.svg);
+    background-color: #fff;
     transform: rotateY(180deg);
     width: 7.6rem;
     height: 7.6rem;
@@ -125,6 +126,7 @@
 
 .products-next {
     background-image: url(../img/arrow-maincolor.svg);
+    background-color: #fff;
     width: 7.6rem;
     height: 7.6rem;
     cursor: pointer;
@@ -180,17 +182,31 @@
     width: 159.6rem;
 }
 
-.events .sec-title,
-.main-title,
-.sub-title {
+.events .main-title {
+    color: #fff;
+}
+
+.events .sub-title {
+    color: #fff;
+}
+
+.events .sec-title {
     color: #fff;
 }
 
 .our-title {
 }
 
+.event-flex {
+    display: flex;
+    gap: 10.7rem;
+}
+
 .events-container {
     width: 45.3rem;
+    display: flex;
+    gap: 10.7rem;
+    overflow: hidden;
 }
 
 .events-container figure {
@@ -202,6 +218,24 @@
 
 .events-con {
     width: 100%;
+    display: block;
+    margin-bottom: 120px;
+    opacity: 0;
+    transition: all 1s;
+    transform: translate(0, 50px);
+}
+
+.events-con.active {
+    opacity: 1 !important;
+    transform: translate(0, 0) !important;
+}
+
+.event-explain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6rem;
+    margin-top: 4rem;
 }
 
 .event-icon {
@@ -212,7 +246,7 @@
 
 .event-text {
     color: #fff;
-    margin-top: 4rem;
+    width: 33rem;
 }
 
 .event-text strong {
@@ -223,4 +257,73 @@
 .event-text p {
     font-size: 1.7rem;
     color: var(--gray2);
+}
+
+/* 책임감잇는 음주문화 */
+
+.encouraging-con {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.encouraging-text {
+    width: 61.2rem;
+}
+
+.encouraging-text dl {
+    text-align: center;
+    margin-top: 2.3rem;
+}
+
+.encouraging-text dl dt {
+    font-weight: 600;
+    font-size: 3.5rem;
+    color: var(--main-color);
+}
+
+.encouraging-text dl dd {
+    font-size: 2rem;
+    color: var(--gray3);
+    margin-top: 3rem;
+}
+
+.encouraging-icon {
+    width: 10.5rem;
+    height: 10.5rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.encouraging-con .encouraging-text:nth-child(1) .encouraging-icon {
+    background-image: url(../img/encouraging-icon1.svg);
+}
+.encouraging-con .encouraging-text:nth-child(2) .encouraging-icon {
+    background-image: url(../img/encouraging-icon2.svg);
+}
+.encouraging-con .encouraging-text:nth-child(3) .encouraging-icon {
+    background-image: url(../img/encouraging-icon3.svg);
+}
+.encouraging-con .encouraging-text:nth-child(4) .encouraging-icon {
+    background-image: url(../img/encouraging-icon4.svg);
+}
+.encouraging-con .encouraging-text:nth-child(5) .encouraging-icon {
+    background-image: url(../img/encouraging-icon5.svg);
+}
+
+.encouraging-img figure {
+    width: 57.2rem;
+    height: 70.4rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.encouraging-swiper-wrap {
+    width: 57.2rem;
+    height: 70.4rem;
+}
+
+.encouraging-swiper-wrap .encouraging-swiper {
+    width: 100%;
+    height: 100%;
 }
