@@ -1,3 +1,4 @@
+// 스토리
 const storySlider = new Swiper(".story-slider", {
     // Optional parameters
     direction: "horizontal",
@@ -12,6 +13,7 @@ const storySlider = new Swiper(".story-slider", {
     },
 });
 
+// 제품
 const productsSlider = new Swiper(".products-slider", {
     // Optional parameters
     direction: "horizontal",
@@ -28,7 +30,34 @@ const productsSlider = new Swiper(".products-slider", {
     },
 });
 
-const encouragingSwiper = new Swiper(".encouraging-swiper", {
+// const $counters = $(".events-con");
+// const exposurePercentage = 80;
+// const loop = true;
+
+// $(window)
+//     .on("scroll", function () {
+//         $counters.each(function () {
+//             const $el = $(this);
+
+//             const rect = $el[0].getBoundingClientRect();
+//             const winHeight = window.innerHeight;
+//             const contentHeight = rect.bottom - rect.top;
+
+//             if (
+//                 rect.top <= winHeight - (contentHeight * exposurePercentage) / 100 &&
+//                 rect.bottom >= (contentHeight * exposurePercentage) / 100
+//             ) {
+//                 $el.addClass("active");
+//             }
+//             if (loop && rect.top >= window.innerHeight) {
+//                 $el.removeClass("active");
+//             }
+//         });
+//     })
+//     .scroll();
+
+// 음주문화 이미지
+const enimgSwiper = new Swiper(".encouraging-img-swiper", {
     // Optional parameters
     direction: "horizontal",
     loop: true,
@@ -43,31 +72,31 @@ const encouragingSwiper = new Swiper(".encouraging-swiper", {
     // },
 });
 
-$(document).ready(function () {
-    const $counters = $(".events-con");
+// 음주문화 글씨
+const enconSwiper = new Swiper(".encouraging-con-swiper", {
+    // Optional parameters
+    direction: "horizontal",
+    effect: "fade",
+    touchRatio: 0,
+    loop: true,
+});
 
-    const exposurePercentage = 80;
-    const loop = true;
+// 음주문화 연동
+enimgSwiper.on("slideChange", function () {
+    idx = enimgSwiper.realIndex;
+    enconSwiper.slideToLoop(idx);
+});
 
-    $(window)
-        .on("scroll", function () {
-            $counters.each(function () {
-                const $el = $(this);
+const btnTop = document.querySelector(".btn-top");
+const html = document.documentElement;
+const htmlPos = html.scrollHeight / 2;
 
-                const rect = $el[0].getBoundingClientRect();
-                const winHeight = window.innerHeight;
-                const contentHeight = rect.bottom - rect.top;
+window.addEventListener("scroll", function () {
+    let scrollTop = window.scrollY;
 
-                if (
-                    rect.top <= winHeight - (contentHeight * exposurePercentage) / 100 &&
-                    rect.bottom >= (contentHeight * exposurePercentage) / 100
-                ) {
-                    $el.addClass("active");
-                }
-                if (loop && rect.top >= window.innerHeight) {
-                    $el.removeClass("active");
-                }
-            });
-        })
-        .scroll();
+    if (scrollTop >= htmlPos) {
+        btnTop.classList.add("active");
+    } else {
+        btnTop.classList.remove("active");
+    }
 });

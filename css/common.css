@@ -1,12 +1,16 @@
 @charset 'utf-8';
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 @font-face {
-    font-family: banner-font;
-    src: url(../fonts/Amaranth-Regular.ttf);
-    font-family: heineken-font;
-    src: url(../fonts/HEINEKEN.TTF);
-    font-family: visual-font;
-    src: url(../fonts/SDSwaggerTTF.ttf);
+    font-family: "banner";
+    src: url("../fonts/Amaranth-Regular.woff");
+}
+@font-face {
+    font-family: "heineken";
+    src: url("../fonts/HEINEKEN.woff");
+}
+@font-face {
+    font-family: "visual";
+    src: url("../fonts/SDSwaggerTTF.woff");
 }
 
 :root {
