@@ -1,0 +1,124 @@
+@charset 'utf-8';
+
+#header {
+    height: 14.5rem;
+}
+
+/* visual */
+.sub-visual {
+    background: var(--main-color);
+    padding-top: 7rem;
+    padding-bottom: 7.6rem;
+}
+
+.sub-sec-title {
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: var(--sub-sec-title);
+}
+
+.sub-main-title {
+    font-weight: 600;
+    font-size: 4.5rem;
+    color: #fff;
+}
+
+/* brand */
+.brand-introduction figure {
+    margin-top: 3rem;
+}
+
+/* logo */
+.logo figure {
+    width: 32rem;
+    height: 32rem;
+}
+
+.brand-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23.7rem;
+}
+
+.our-title {
+    width: 69rem;
+}
+
+/* brewing-item */
+.brewing-bg {
+    background: url(../img/sub-brewing-bg1.jpg);
+    width: 100%;
+    height: 96.5rem;
+}
+
+.brewing-item h3 {
+    color: #fff;
+    padding-top: 11.2rem;
+}
+
+.brewing-item h4 {
+    color: #fff;
+}
+
+.brewing-item .sub-title {
+    color: #fff;
+}
+
+.brewing-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9.6rem;
+}
+
+.brewing-flex li {
+    width: 32rem;
+    height: 32rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+.brewing-flex li a {
+    text-align: center;
+}
+
+.brewing-flex li figure {
+    width: 10rem;
+    height: 10rem;
+}
+
+.brewing-flex li p {
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.brewing-flex li figure img {
+    object-fit: contain;
+}
+
+.brewing-text {
+    width: 71rem;
+}
+
+.brewing-text-swiper {
+    width: 71rem;
+    height: 35rem;
+}
+
+/* 양조과정 아이콘 */
+
+.brewing-icon {
+    width: 17.6rem;
+    height: 17.6rem;
+    background-color: var(--main-color);
+    border-radius: 50%;
+}

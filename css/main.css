@@ -1,5 +1,10 @@
 @charset 'utf-8';
 
+#header {
+    background: var(--main-color);
+    height: 100%;
+}
+
 .visual-title {
     font-family: "visual";
     font-size: 44.8rem;
@@ -15,27 +20,6 @@
     position: absolute;
     top: 170px;
     left: 597px;
-}
-
-.sec-title {
-    margin-top: 21.3rem;
-    color: var(--sub-color);
-    font-size: 2.5rem;
-    font-weight: 600;
-    text-align: center;
-}
-
-.main-title {
-    margin-top: 7.2rem;
-    font-size: 4rem;
-    font-weight: 700;
-    color: #000;
-}
-
-.sub-title {
-    margin-top: 1.8rem;
-    font-size: 2.5rem;
-    color: var(--gray1);
 }
 
 /* our story */
@@ -194,9 +178,6 @@
     color: #fff;
 }
 
-.our-title {
-}
-
 .event-flex {
     display: flex;
     gap: 10.7rem;
@@ -266,12 +247,6 @@
     justify-content: space-between;
     align-items: center;
     gap: 11.1rem;
-}
-
-.encouraging-con {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
 .swiper-slide .encouraging-text {
@@ -365,77 +340,4 @@ video {
     font-size: 1.6rem;
     margin-top: 16.8rem;
     color: #fff;
-}
-
-/* footer */
-#footer {
-    background: var(--main-color);
-    color: #fff;
-    padding: 7rem 0;
-}
-
-.foot-logo {
-    display: block;
-    background-image: url(../img/foot-logo.svg);
-    width: 16rem;
-    height: 8.2rem;
-}
-
-address {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-top: 4rem;
-}
-
-.foot-con {
-    display: flex;
-    justify-content: start;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.foot-sns {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-
-.foot-sns li {
-    display: block;
-    width: 3.7rem;
-    height: 3.7rem;
-}
-
-.foot-sns li:nth-child(1) {
-    background-image: url(../img/sns-facebook.svg);
-}
-
-.foot-sns li:nth-child(2) {
-    background-image: url(../img/sns-instagram.svg);
-}
-
-.foot-sns li:nth-child(3) {
-    background-image: url(../img/sns-x.svg);
-}
-
-/* top 버튼 */
-.btn-top {
-    position: fixed;
-    background: #b90612 url(../img/arrow-top.svg) no-repeat 50% 47%;
-    width: 6.7rem;
-    height: 6.7rem;
-    bottom: 25rem;
-    right: 26.2rem;
-    border-radius: 50%;
-    box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.25);
-    opacity: 0;
-    z-index: 1;
-    transition: 0.4s;
-}
-
-.btn-top.active {
-    opacity: 1;
-    bottom: 15rem;
 }
