@@ -28,33 +28,56 @@ const productsSlider = new Swiper(".products-slider", {
         nextEl: ".products-slider-wrap .products-next",
         prevEl: ".products-slider-wrap .products-prev",
     },
+
+    // 슬라이드 변경 시 실행되는 콜백
+    on: {
+        init: function () {
+            updateActiveSlide(this);
+        },
+        slideChange: function () {
+            updateActiveSlide(this);
+        },
+    },
 });
 
-// const $counters = $(".events-con");
-// const exposurePercentage = 80;
-// const loop = true;
+// active 클래스 업데이트 함수
+function updateActiveSlide(swiper) {
+    // 모든 figure에서 active 클래스 제거
+    const allFigures = document.querySelectorAll(".product-item figure");
+    allFigures.forEach((figure) => figure.classList.remove("active"));
 
-// $(window)
-//     .on("scroll", function () {
-//         $counters.each(function () {
-//             const $el = $(this);
+    // 현재 활성화된 슬라이드의 figure에 active 클래스 추가
+    const activeSlide = swiper.slides[swiper.activeIndex];
+    if (activeSlide) {
+        const activeFigure = activeSlide.querySelector("figure");
+        if (activeFigure) {
+            activeFigure.classList.add("active");
+        }
+    }
+}
 
-//             const rect = $el[0].getBoundingClientRect();
-//             const winHeight = window.innerHeight;
-//             const contentHeight = rect.bottom - rect.top;
+// 이벤트
+gsap.registerPlugin(ScrollTrigger);
 
-//             if (
-//                 rect.top <= winHeight - (contentHeight * exposurePercentage) / 100 &&
-//                 rect.bottom >= (contentHeight * exposurePercentage) / 100
-//             ) {
-//                 $el.addClass("active");
-//             }
-//             if (loop && rect.top >= window.innerHeight) {
-//                 $el.removeClass("active");
-//             }
-//         });
-//     })
-//     .scroll();
+const tl = gsap.timeline({
+    defaults: {
+        autoAlpha: 0,
+        duration: 3,
+        ease: "none",
+    },
+    scrollTrigger: {
+        trigger: ".events-container",
+        markers: true,
+        scrub: 1,
+        pin: true,
+    },
+});
+
+tl.from(".event1", { y: -200 });
+tl.from(".event2", { y: -200 });
+tl.from(".event3", { y: -200 });
+tl.from(".event4", { y: -200 });
+tl.to(".fake", { x: 1, duration: 10 });
 
 // 음주문화 이미지
 const enimgSwiper = new Swiper(".encouraging-img-swiper", {

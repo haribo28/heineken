@@ -116,15 +116,57 @@
 
 /* 양조과정 아이콘 */
 
+.brewing-icon-swiper {
+    width: 13rem;
+    height: 13rem;
+    overflow: hidden;
+}
+
+.brewing-icon-swiper .swiper-wrapper {
+    height: 13rem !important;
+}
+
+.brewing-icon-swiper .swiper-slide {
+    height: 13rem !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .brewing-icon {
-    width: 17.6rem;
-    height: 17.6rem;
-    border: 2px solid var(--main-color);
+    width: 13rem;
+    height: 13rem;
+    border: 3px solid var(--main-color);
     border-radius: 50%;
-    padding: 6.2rem;
+    padding: 3.5rem;
+    cursor: pointer;
 }
 
 .brewing-icon figure {
-    width: 5.2rem;
-    height: 5.2rem;
+    width: 6rem;
+    height: 6rem;
+}
+
+.brewing-icon figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.brewing-icon-active {
+    width: 17.5rem;
+    height: 17.5rem;
+    background: var(--main-color);
+    border-radius: 50%;
+    padding: 3.5rem;
+    cursor: pointer;
+}
+
+.brewing-icon-active figure {
+    width: 6rem;
+    height: 6rem;
+}
+
+.swiper-slide {
+    height: auto !important;
 }
