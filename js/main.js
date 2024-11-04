@@ -62,12 +62,12 @@ gsap.registerPlugin(ScrollTrigger);
 const eventTL = gsap.timeline({
     scrollTrigger: {
         trigger: ".events",
-        start: "top 0%",
-        end: "+=100%", // 스크롤 길이를 더 길게 설정
+        start: window.innerWidth >= 1280 ? "top 20%" : "top 0%", // PC에서는 더 일찍 시작
+        end: "+=100%",
         scrub: 1,
         pin: true,
         pinSpacing: true,
-        markers: true, // 개발 완료 후 제거
+        markers: true,
     },
 });
 
