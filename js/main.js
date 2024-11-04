@@ -59,25 +59,28 @@ function updateActiveSlide(swiper) {
 // 이벤트
 gsap.registerPlugin(ScrollTrigger);
 
-const tl = gsap.timeline({
-    defaults: {
-        autoAlpha: 0,
-        duration: 3,
-        ease: "none",
-    },
+const eventTL = gsap.timeline({
     scrollTrigger: {
-        trigger: ".events-container",
-        markers: true,
+        trigger: ".events",
+        start: "top 0%",
+        end: "+=100%", // 스크롤 길이를 더 길게 설정
         scrub: 1,
         pin: true,
+        pinSpacing: true,
+        markers: true, // 개발 완료 후 제거
     },
 });
 
-tl.from(".event1", { y: -200 });
-tl.from(".event2", { y: -200 });
-tl.from(".event3", { y: -200 });
-tl.from(".event4", { y: -200 });
-tl.to(".fake", { x: 1, duration: 10 });
+// 각 이벤트 요소에 대한 애니메이션
+eventTL.from(".events-container", {
+    y: 200,
+    autoAlpha: 0,
+    duration: 0.4,
+});
+eventTL.to(".events-container", {
+    y: -800,
+    duration: 0.5,
+});
 
 // 음주문화 이미지
 const enimgSwiper = new Swiper(".encouraging-img-swiper", {

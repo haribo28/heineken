@@ -10,16 +10,16 @@
     font-size: 44.8rem;
     position: absolute;
     color: #fff;
-    top: 170px;
-    left: 246px;
+    top: 15%;
+    left: 12%;
 }
 
 .visual figure {
     width: 72rem;
     height: 72rem;
     position: absolute;
-    top: 170px;
-    left: 597px;
+    top: 15%;
+    left: 32%;
 }
 
 /* our story */
@@ -60,7 +60,8 @@
 
 .story-con figure {
     width: 69rem;
-    height: 48rem;
+    /* height: 48rem; */
+    aspect-ratio: 69/48;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -202,7 +203,11 @@
     width: 45.3rem;
     display: flex;
     gap: 10.7rem;
-    overflow: hidden;
+    /* overflow: hidden; */
+}
+
+.events-container li:nth-child(1) {
+    transform: translateY(39rem);
 }
 
 .events-container figure {
@@ -215,15 +220,7 @@
 .events-con {
     width: 100%;
     display: block;
-    margin-bottom: 120px;
-    opacity: 0;
-    transition: all 1s;
-    transform: translate(0, 50px);
-}
-
-.events-con.active {
-    opacity: 1 !important;
-    transform: translate(0, 0) !important;
+    margin-bottom: 60px;
 }
 
 .event-explain {
@@ -355,4 +352,163 @@ video {
     font-size: 1.6rem;
     margin-top: 16.8rem;
     color: #fff;
+}
+
+/* ... 기존 코드 유지 ... */
+
+/* 반응형 스타일 */
+@media screen and (max-width: 1280px) {
+    /* 태블릿 */
+    #header {
+        height: 70rem;
+    }
+    .inner {
+        width: 90%;
+    }
+
+    /* .visual-title {
+        font-size: 34rem;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 133px;
+    }
+
+    .visual figure {
+        width: 60rem;
+        height: 60rem;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 96px;
+    } */
+
+    /* Our Story */
+    .story-con {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .story-con figure {
+        width: 100%;
+    }
+
+    .story-con dl {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Products */
+    .products-prev {
+        left: 2rem;
+    }
+
+    .products-next {
+        right: 2rem;
+    }
+
+    /* Events */
+    .events .inner {
+        width: 90%;
+    }
+
+    .event-flex {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .events-container {
+        width: 100%;
+        gap: 5rem;
+    }
+
+    /* Encouraging */
+    .encouraging-wrap {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .encouraging-text {
+        width: 100%;
+    }
+
+    .encouraging-img figure {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* 모바일 */
+    .visual-title {
+        font-size: 20rem;
+        top: 80px;
+    }
+
+    .visual figure {
+        width: 30rem;
+        height: 30rem;
+        top: 250px;
+    }
+
+    /* Story */
+    .story-con dl dt {
+        font-size: 3rem;
+    }
+
+    .story-con dl dd {
+        font-size: 2rem;
+    }
+
+    /* Products */
+    .product-item {
+        width: 100%;
+    }
+
+    .product-text strong {
+        font-size: 2.5rem;
+    }
+
+    .product-text p {
+        font-size: 2rem;
+    }
+
+    /* Events */
+    .events-container {
+        flex-direction: column;
+    }
+
+    .events-container li:nth-child(1) {
+        transform: translateY(0);
+    }
+
+    .event-text strong {
+        font-size: 2.8rem;
+    }
+
+    .event-text p {
+        font-size: 2rem;
+    }
+
+    /* Banner */
+    .banner-con div {
+        right: 50%;
+        transform: translateX(50%);
+        text-align: center;
+    }
+
+    .banner-title {
+        font-size: 8rem;
+        line-height: 9rem;
+    }
+
+    .warring {
+        font-size: 2rem;
+        margin-top: 8rem;
+    }
+}
+
+/* 공통 스타일 유지를 위한 최소 폰트 사이즈 보장 */
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 62.5%; /* 최소 폰트 사이즈 보장 */
+    }
 }

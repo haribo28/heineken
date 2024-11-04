@@ -149,6 +149,25 @@ nav .header-logo {
     color: var(--gray1);
 }
 
+/* visual */
+.sub-visual {
+    background: var(--main-color);
+    padding-top: 7rem;
+    padding-bottom: 7.6rem;
+}
+
+.sub-sec-title {
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: var(--sub-sec-title);
+}
+
+.sub-main-title {
+    font-weight: 600;
+    font-size: 4.5rem;
+    color: #fff;
+}
+
 /* footer */
 #footer {
     background: var(--main-color);
