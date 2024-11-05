@@ -92,19 +92,20 @@
 
 .brewing-text-swiper {
     width: 71rem;
-    height: 35rem;
+    height: 31rem;
+    overflow: hidden;
 }
 
 /* 양조과정 아이콘 */
 
 .brewing-icon-swiper {
     width: 13rem;
-    height: 13rem;
-    overflow: hidden;
+    height: 15rem;
+    /* overflow: visible; */
 }
 
 .brewing-icon-swiper .swiper-wrapper {
-    height: 13rem !important;
+    height: 12rem !important;
 }
 
 .brewing-icon-swiper .swiper-slide {
@@ -123,11 +124,6 @@
     cursor: pointer;
 }
 
-.brewing-icon figure {
-    width: 6rem;
-    height: 6rem;
-}
-
 .brewing-icon figure img {
     width: 100%;
     height: 100%;
@@ -141,11 +137,6 @@
     border-radius: 50%;
     padding: 3.5rem;
     cursor: pointer;
-}
-
-.brewing-icon-active figure {
-    width: 6rem;
-    height: 6rem;
 }
 
 .swiper-slide {

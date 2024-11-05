@@ -1,15 +1,30 @@
+// Swiper 인스턴스 생성
 const brewingTextswiper = new Swiper(".brewing-text-swiper", {
-    // Optional parameters
     direction: "vertical",
     loop: true,
 });
 
 const brewingIconswiper = new Swiper(".brewing-icon-swiper", {
     direction: "vertical",
-    loop: true,
     slidesPerView: 1,
-    spaceBetween: 0,
+    loop: true,
+    loopAdditionalSlides: 2,
 });
+
+// 슬라이드 변경을 동기화하는 함수
+function syncSwipers(mainSwiper, secondarySwiper) {
+    mainSwiper.on("slideChangeTransitionStart", function () {
+        // 현재 인덱스를 가져와서 다른 Swiper에 적용
+        const newIndex = mainSwiper.realIndex;
+        if (secondarySwiper.realIndex !== newIndex) {
+            secondarySwiper.slideToLoop(newIndex);
+        }
+    });
+}
+
+// 텍스트와 아이콘 Swiper 동기화
+syncSwipers(brewingTextswiper, brewingIconswiper);
+syncSwipers(brewingIconswiper, brewingTextswiper);
 
 const $brewingButtons = $(".brewing-flex button");
 const $brewingBg = $(".brewing-bg");
