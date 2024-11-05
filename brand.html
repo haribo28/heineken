@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>heineken-brand</title>
 
+        <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/common.css" />
@@ -12,6 +14,8 @@
 
         <script src="./js/jquery-3.7.1.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
         <script src="./js/common.js" defer></script>
         <script src="./js/brand.js" defer></script>
     </head>
@@ -28,11 +32,12 @@
                         <li><a href="brand.html">브랜드</a></li>
                         <li><a href="products.html">제품</a></li>
                         <li><a href="events.html">이벤트</a></li>
-                        <li><a href="#">스폰서쉽</a></li>
+                        <li><a href="sponsorships.html">스폰서쉽</a></li>
                     </ul>
                     <div class="header-icon">
                         <button class="lang"><i class="hidden">language</i></button>
                         <button class="search"><i class="hidden">search</i></button>
+                        <button class="tablet-menu"><i class="hidden">tabletmenu</i></button>
                     </div>
                 </nav>
             </div>
@@ -101,32 +106,27 @@
                                 <h4 class="main-title">완벽한 한 잔을 위해</h4>
                                 <p class="sub-title">자연의 신선함과 양조의 예술이 만난 맥주의 진수.</p>
                             </div>
-                            <ul class="brewing-flex">
-                                <li>
-                                    <a href="#">
-                                        <figure><img src="./img/sub-brand-icon1.svg" alt="보리" /></figure>
-                                        <p>보리</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <figure><img src="./img/sub-brand-icon2.svg" alt="물" /></figure>
-                                        <p>물</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <figure><img src="./img/sub-brand-icon3.svg" alt="홉" /></figure>
-                                        <p>홉</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <figure><img src="./img/sub-brand-icon4.svg" alt="A-Yeast" /></figure>
-                                        <p>A-Yeast</p>
-                                    </a>
-                                </li>
-                            </ul>
+                            <div class="brewing-flex">
+                                <button type="button">
+                                    <figure><img src="./img/sub-brand-icon1.svg" alt="보리" /></figure>
+                                    <p>보리</p>
+                                </button>
+
+                                <button type="button">
+                                    <figure><img src="./img/sub-brand-icon2.svg" alt="물" /></figure>
+                                    <p>물</p>
+                                </button>
+
+                                <button type="button">
+                                    <figure><img src="./img/sub-brand-icon3.svg" alt="홉" /></figure>
+                                    <p>홉</p>
+                                </button>
+
+                                <button type="button">
+                                    <figure><img src="./img/sub-brand-icon4.svg" alt="A-Yeast" /></figure>
+                                    <p>A-Yeast</p>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>

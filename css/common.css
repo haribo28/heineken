@@ -35,7 +35,7 @@ html {
 body {
     font: 1.6rem/1.5 Pretendard, sans-serif;
     color: var(--text-color);
-    text-transform: capitalize; /* ttc: 단어의 첫글자를 대문자로 */
+    /* text-transform: capitalize; */
     word-break: keep-all;
     overflow-x: hidden;
 }
@@ -79,7 +79,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3.8rem 0 86rem;
+    padding: 3.8rem 0;
     position: relative;
 }
 

@@ -5,6 +5,10 @@
     height: 100%;
 }
 
+nav {
+    padding: 3.8rem 0 86rem;
+}
+
 .visual-title {
     font-family: "visual";
     font-size: 25vw;

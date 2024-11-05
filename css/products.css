@@ -1,0 +1,157 @@
+@charset 'utf-8';
+
+.products {
+    margin-bottom: 23.4rem;
+    width: 1400px;
+    height: 1000px;
+}
+
+.products-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    margin-top: 7.3rem;
+}
+
+.products-icon button {
+    background: #fff;
+    width: 12.8rem;
+    height: 12.8rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: 0.4s;
+}
+
+.products-icon button:nth-child(1) {
+    background-image: url(../img/sub-products-icon1.svg);
+}
+.products-icon button:nth-child(2) {
+    background-image: url(../img/sub-products-icon2.svg);
+}
+.products-icon button:nth-child(3) {
+    background-image: url(../img/sub-products-icon3.svg);
+}
+
+.products-icon button.active:nth-child(1) {
+    background-image: url(../img/sub-products-icon1-click.svg);
+}
+.products-icon button.active:nth-child(2) {
+    background-image: url(../img/sub-products-icon2-click.svg);
+}
+.products-icon button.active:nth-child(3) {
+    background-image: url(../img/sub-products-icon3-click.svg);
+}
+
+.products-con figure {
+    width: 17.2rem;
+    height: 60.5rem;
+    transform: rotate(15deg);
+}
+
+.products-con .can {
+    width: 16.2rem;
+    height: 39.5rem;
+    transform: rotate(15deg);
+}
+
+.products-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 21rem;
+    margin-top: 9.5rem;
+}
+
+.flex-can {
+    margin-top: 20rem;
+}
+
+.products-flex dl {
+    width: 50rem;
+}
+
+.products-flex dl dt {
+    font-weight: 600;
+    font-size: 3.5rem;
+}
+
+.products-flex dl dd {
+    font-size: 2rem;
+    color: var(--gray1);
+    margin-top: 2.3rem;
+}
+
+.products-ingredients {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8.8rem;
+    border-top: 2px solid var(--main-color);
+    width: 125rem;
+    margin: 0 auto;
+    margin-top: 10.8rem;
+    padding: 3.3rem 5rem;
+}
+
+.ingredients-can {
+    margin-top: 21rem;
+}
+
+.products-ingredients div {
+    text-align: center;
+}
+
+.products-ingredients div .products-text {
+    font-weight: 300 !important;
+    font-size: 1.8rem !important;
+    color: var(--gray1) !important;
+}
+
+.products-ingredients div strong {
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.products-ingredients div p:nth-child(1) {
+    font-size: 2.2rem;
+    color: var(--gray1);
+}
+
+.products-ingredients div p:nth-child(2) {
+    font-size: 1.8rem;
+    color: var(--main-color);
+}
+
+.products-swiper-wrap {
+    position: relative;
+}
+
+/* 커스텀 버튼 */
+.products-prev {
+    background-image: url(../img/arrow-maincolor.svg);
+    background-color: transparent;
+    transform: rotateY(180deg);
+    width: 7.6rem;
+    height: 7.6rem;
+    cursor: pointer;
+    position: absolute;
+    top: 39%;
+    left: 6.4rem;
+    z-index: 10; /* 추가 */
+    border: none; /* 추가 */
+}
+
+.products-next {
+    background-image: url(../img/arrow-maincolor.svg);
+    background-color: transparent;
+    width: 7.6rem;
+    height: 7.6rem;
+    cursor: pointer;
+    position: absolute;
+    top: 39%;
+    right: 6.4rem;
+    z-index: 10; /* 추가 */
+    border: none; /* 추가 */
+}

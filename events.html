@@ -4,6 +4,20 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Event</title>
+
+        <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/event.css" />
+
+        <script src="./js/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+        <script src="./js/common.js" defer></script>
+        <script src="./js/event.js" defer></script>
     </head>
     <body>
         <a href="#main" class="hidden">본문 바로가기</a>
@@ -18,85 +32,91 @@
                         <li><a href="brand.html">브랜드</a></li>
                         <li><a href="products.html">제품</a></li>
                         <li><a href="events.html">이벤트</a></li>
-                        <li><a href="#">스폰서쉽</a></li>
+                        <li><a href="sponsorships.html">스폰서쉽</a></li>
                     </ul>
                     <div class="header-icon">
                         <button class="lang"><i class="hidden">language</i></button>
                         <button class="search"><i class="hidden">search</i></button>
+                        <button class="tablet-menu"><i class="hidden">tabletmenu</i></button>
                     </div>
                 </nav>
             </div>
         </header>
 
         <main id="main">
-            <div class="inner">
-                <section class="sub-visual">
-                    <div class="inner">
-                        <h2 class="sub-sec-title">Brand</h2>
-                        <strong class="sub-main-title">세계 최고의 프리미엄, 라거 브랜드가 되기까지</strong>
-                    </div>
-                </section>
+            <section class="sub-visual">
+                <div class="inner">
+                    <h2 class="sub-sec-title">Events</h2>
+                    <strong class="sub-main-title">하이네켄의 마법</strong>
+                </div>
+            </section>
 
-                <section class="events">
-                    <div class="inner">
-                        <h3 class="sec-title">Products Introduction</h3>
-                        <div class="our-title">
-                            <h4 class="main-title">모든 제품</h4>
-                            <p class="sub-title">
-                                아이코닉한 맥주 브랜드의 대명사, 하이네켄. 당신의 취향에 맞는 제품을 골라보세요. 세상이
-                                한층 신선해질 거예요!
-                            </p>
-                        </div>
+            <section class="events">
+                <div class="inner">
+                    <h3 class="sec-title">Events Introduction</h3>
+                    <div class="our-title">
+                        <h4 class="main-title">신선한 하이네켄만의 이벤트</h4>
+                        <p class="sub-title">
+                            단순한 광고가 아닌, 긍정적이고 유쾌한 시각으로 세상을 바라보는 관점을 제안하는 우리의
+                            이벤트를 통해 당신의 일상이 좀 더 즐거워지길 바랍니다. 우리의 맥주 만큼이나 신선한
+                            하이네켄의 이벤트를 위해 Cheers!
+                        </p>
                     </div>
 
-                    <div>
+                    <div class="event-container">
                         <ul class="events-con">
                             <li>
                                 <figure>
-                                    <img src="#" alt="" />
+                                    <img src="./img/sub-event-img1.jpg" alt="하이네켄 크리덴셜 캠페인" />
                                 </figure>
                                 <dl>
-                                    <dt></dt>
-                                    <dd></dd>
+                                    <dt>하이네켄 크리덴셜 캠페인</dt>
+                                    <dd>
+                                        우리의 오랜 정성만큼, 더 길어지는 첫 모금의 감탄. 즐거움 가득한 첫 모금의
+                                        순간으로 초대합니다.
+                                    </dd>
                                 </dl>
                             </li>
-                        </ul>
-                        <ul class="events-con">
                             <li>
                                 <figure>
-                                    <img src="#" alt="" />
+                                    <img src="./img/sub-event-img2.jpg" alt="하이네켄 풋볼 캠페인" />
                                 </figure>
                                 <dl>
-                                    <dt></dt>
-                                    <dd></dd>
+                                    <dt>하이네켄 풋볼 캠페인</dt>
+                                    <dd>
+                                        하이네켄® 브랜드는 UEFA® 챔피언스리그(UCL)와 여자 챔피언스리그(UWCL)의 공식
+                                        스폰서로서, 2024년 더욱 아이코닉하고 의미있는 캠페인을 선보입니다.
+                                    </dd>
                                 </dl>
                             </li>
-                        </ul>
-                        <ul class="events-con">
                             <li>
                                 <figure>
-                                    <img src="#" alt="" />
+                                    <img src="./img/sub-event-img3.jpg" alt="하이네켄 150주년 캠페인" />
                                 </figure>
                                 <dl>
-                                    <dt></dt>
-                                    <dd></dd>
+                                    <dt>하이네켄 150주년 캠페인</dt>
+                                    <dd>
+                                        어떤 방식으로든 함께 즐겨온 우리의 150년의 시간, 즐거움 전문가인 하이네켄답게
+                                        만들어 낸 즐기는 방법에 정답이 없는 이곳
+                                    </dd>
                                 </dl>
                             </li>
-                        </ul>
-                        <ul class="events-con">
                             <li>
                                 <figure>
-                                    <img src="#" alt="" />
+                                    <img src="./img/sub-event-img4.jpg" alt="하이네켄 0.0 출시" />
                                 </figure>
                                 <dl>
-                                    <dt></dt>
-                                    <dd></dd>
+                                    <dt>하이네켄 0.0 출시</dt>
+                                    <dd>
+                                        마침내 상쾌한 과일 노트와 부드러운 맥아 바디로 정의된 레시피를 만들어냈습니다.
+                                        완벽하게 균형을 이룬 레시피입니다.
+                                    </dd>
                                 </dl>
                             </li>
                         </ul>
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
         </main>
 
         <footer id="footer">

@@ -1,0 +1,37 @@
+@charset 'utf-8';
+
+.event-container {
+    margin-bottom: 32.2rem;
+}
+
+.events-con {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 112px;
+    margin-top: 206px;
+}
+
+.events-con li {
+    width: 64.4rem;
+}
+
+.events-con li figure {
+    aspect-ratio: 1/1;
+}
+
+dl {
+    margin-top: 4rem;
+}
+
+dl dt {
+    font-weight: 600;
+    font-size: 3.5rem;
+    color: var(--main-color);
+}
+
+dl dd {
+    font-size: 2.5rem;
+    color: var(--gray1);
+    margin-top: 0.8rem;
+}

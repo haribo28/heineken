@@ -62,9 +62,9 @@ gsap.registerPlugin(ScrollTrigger);
 const eventTL = gsap.timeline({
     scrollTrigger: {
         trigger: ".events",
-        start: window.innerWidth >= 1280 ? "top 20%" : "top 0%", // PC에서는 더 일찍 시작
-        end: "+=100%",
-        scrub: 1,
+        start: window.innerWidth >= 1280 ? "top 20%" : "top 0%",
+        end: "bottom 0",
+        scrub: 2,
         pin: true,
         pinSpacing: true,
         markers: true,
@@ -75,11 +75,13 @@ const eventTL = gsap.timeline({
 eventTL.from(".events-container", {
     y: 200,
     autoAlpha: 0,
-    duration: 0.4,
+    duration: 1,
+    ease: "power2.out",
 });
 eventTL.to(".events-container", {
     y: -800,
-    duration: 0.5,
+    duration: 1.5,
+    ease: "power1.inOut",
 });
 
 // 음주문화 이미지
