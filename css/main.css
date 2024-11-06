@@ -215,10 +215,15 @@ nav {
     transform: translateY(39rem);
 }
 
+.events-container li a {
+    display: block;
+    aspect-ratio: 1 / 1.87;
+}
+
 .events-container figure {
     /* width: 45.3rem; */
     height: 61rem;
-    border-radius: 10px;
+    border-radius: 6px;
     overflow: hidden;
 }
 
@@ -264,22 +269,20 @@ nav {
 
 .encouraging-wrap {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     gap: 11.1rem;
+    /* background: tomato; */
 }
 
-.encouraging-text {
+.encouraging-con-swiper {
     width: 61.2rem;
-    opacity: 0;
-}
-
-.encouraging-text .swiper-slide-active {
-    opacity: 1;
+    /* background: #fff; */
 }
 
 .encouraging-text {
     background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .encouraging-text > figure {
@@ -312,16 +315,23 @@ nav {
     margin: 0 auto;
 }
 
-.encouraging-img figure {
+.encouraging-img-swiper {
+    /* border: 1px solid #00f; */
     width: 57.2rem;
     height: 70.4rem;
+}
+
+.encouraging-img figure {
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
     overflow: hidden;
 }
 
-.encouraging-img-swiper {
-    width: 57.2rem;
-    height: 70.4rem;
+.encouraging-img figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* 배너 */
@@ -349,8 +359,8 @@ video {
 
 .banner-con div {
     position: absolute;
-    top: 22.6%; /* 17rem -> 22.6% */
-    right: 20.5%; /* 39.4rem -> 20.5% */
+    top: 18.6%; /* 17rem -> 22.6% */
+    right: 25.5%; /* 39.4rem -> 20.5% */
 }
 
 .banner-con div p:nth-child(1) {
@@ -410,13 +420,8 @@ video {
         width: 90%;
     }
 
-    .event-flex {
-        flex-direction: column;
-    }
-
     .events-container {
-        width: 100%;
-        /* gap: 5rem; */
+        flex-direction: column;
     }
 
     /* Encouraging */
@@ -429,15 +434,17 @@ video {
     .encouraging-wrap {
         flex-direction: column-reverse;
         gap: 6rem;
-        max-width: 61.2rem;
+        /* max-width: 61.2rem; */
         margin: 0 auto;
         width: 100%;
     }
 
+    .encouraging-con-swiper {
+        aspect-ratio: 1/0.6;
+    }
+
     .encouraging-text {
         width: 100%;
-        max-width: 61.2rem;
-        margin: 0 auto;
     }
 
     .encouraging-img figure {
@@ -456,5 +463,10 @@ video {
         background: url(../img/gnb-menu.svg);
         width: 2.9rem;
         height: 2.9rem;
+    }
+
+    .events-container li {
+        display: block;
+        margin-bottom: 7rem;
     }
 }

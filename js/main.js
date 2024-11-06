@@ -63,11 +63,11 @@ const eventTL = gsap.timeline({
     scrollTrigger: {
         trigger: ".events",
         start: window.innerWidth >= 1280 ? "top 20%" : "top 0%",
-        end: "bottom 0%",
+        end: "bottom -100%",
         scrub: 2,
         pin: true,
         pinSpacing: true,
-        // markers: true,
+        markers: true,
     },
 });
 
@@ -87,8 +87,9 @@ eventTL.to(".events-container", {
 // 음주문화 이미지
 const enimgSwiper = new Swiper(".encouraging-img-swiper", {
     // Optional parameters
-    direction: "horizontal",
+    // direction: "horizontal",
     loop: true,
+    slidesPerView: "auto",
 
     effect: "cards",
     grabCursor: true,
