@@ -232,24 +232,12 @@ address {
     width: 6.7rem;
     height: 6.7rem;
     bottom: 22.6%; /* 17rem -> 22.6% */
-    left: 72.5%; /* 39.4rem -> 20.5% */
+    right: 12.5%; /* 39.4rem -> 20.5% */
     border-radius: 50%;
     box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.25);
     opacity: 0;
     z-index: 1;
     transition: 0.4s;
-}
-
-@media (max-width: 1280px) {
-    .btn-top {
-        left: 28.5%;
-    }
-}
-
-@media (max-width: 1280px) {
-    .btn-top {
-        left: 22.5%;
-    }
 }
 
 .btn-top.active {

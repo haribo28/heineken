@@ -1,250 +1,248 @@
 <!DOCTYPE html>
 <html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>heineken-brand</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>heineken-brand</title>
+        <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
 
-  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/brand.css" />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./css/reset.css" />
-  <link rel="stylesheet" href="./css/common.css" />
-  <link rel="stylesheet" href="./css/brand.css" />
+        <script src="./js/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+        <script src="./js/common.js" defer></script>
+        <script src="./js/brand.js" defer></script>
+    </head>
 
-  <script src="./js/jquery-3.7.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-  <script src="./js/common.js" defer></script>
-  <script src="./js/brand.js" defer></script>
-</head>
+    <body>
+        <a href="#main" class="hidden">본문 바로가기</a>
 
-<body>
-  <a href="#main" class="hidden">본문 바로가기</a>
-
-  <header id="header">
-    <div class="inner">
-      <nav>
-        <h1 class="header-logo">
-          <a href="index.html"><i class="hidden">heineken</i></a>
-        </h1>
-        <ul class="gnb">
-          <li><a href="brand.html">브랜드</a></li>
-          <li><a href="products.html">제품</a></li>
-          <li><a href="events.html">이벤트</a></li>
-          <li><a href="sponsorships.html">스폰서쉽</a></li>
-        </ul>
-        <div class="header-icon">
-          <button class="lang"><i class="hidden">language</i></button>
-          <button class="search"><i class="hidden">search</i></button>
-          <button class="tablet-menu"><i class="hidden">tabletmenu</i></button>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main">
-    <!-- s: sub-visual -->
-    <section class="sub-visual">
-      <div class="inner">
-        <h2 class="sub-sec-title">Brand</h2>
-        <strong class="sub-main-title">세계 최고의 프리미엄, 라거 브랜드가 되기까지</strong>
-      </div>
-    </section>
-    <!-- //e: sub-visual -->
-
-    <!-- s: brand-introduction -->
-    <section class="brand-introduction">
-      <div class="inner">
-        <h3 class="sec-title">Brand Introduction</h3>
-        <div class="our-title">
-          <h4 class="main-title">당신의 세상을 열어라</h4>
-          <p class="sub-title">
-            하이네켄은 1873년 네덜란드에서 시작되어 150년 이상의 전통을 이어오고 있는 프리미엄 맥주
-            브랜드입니다. 전 세계 190여 개국에서 사랑받으며, 고유의 A-Yeast 효모와 엄선된 천연 재료만을
-            사용해 균형 잡힌 맛을 유지해오고 있습니다. 지속 가능한 양조 방식과 환경 보호를 위한 노력을
-            통해, 미래 세대와 함께하는 맥주 문화를 만들어 가고 있습니다.
-          </p>
-        </div>
-
-        <figure>
-          <img src="./img/sub-brand-banner.jpg" alt="당신의 세상을 열어라" />
-        </figure>
-      </div>
-    </section>
-    <!-- //e: brand-introduction -->
-
-    <!-- s:logo -->
-    <section class="logo">
-      <div class="inner">
-        <h3 class="sec-title">LOGO</h3>
-        <div class="brand-flex">
-          <div class="our-title">
-            <h4 class="main-title">전통을 담은 아이코닉 로고</h4>
-            <p class="sub-title">
-              하이네켄의 맛을 내는 끈기와 인내심을 상징하는 초록색 라벨, 양조사들의 별
-              헥사그램(Hexagram)에서 유래한 붉은 색의 오각형 별, 시그니처인 브랜드 고유의 폰트와 웃는
-              모양을 상징하는 기울어진 e 전통과 상징이 어우러진 하이네켄 로고, 그 안에 담긴 끈기와
-              열정의 이야기를 담고 있습니다.
-            </p>
-          </div>
-          <figure>
-            <img src="./img/sub-brand-logo.jpg" alt="전통을 담은 아이코닉 로고" />
-          </figure>
-        </div>
-      </div>
-    </section>
-    <!-- //e:logo -->
-
-    <!-- s:brewing-item -->
-    <section class="brewing-item">
-      <div class="brewing-bg">
-        <div class="inner">
-          <div>
-            <h3 class="sec-title">Brewing Item</h3>
-            <div class="our-title">
-              <h4 class="main-title">완벽한 한 잔을 위해</h4>
-              <p class="sub-title">자연의 신선함과 양조의 예술이 만난 맥주의 진수.</p>
+        <header id="header">
+            <div class="inner">
+                <nav>
+                    <h1 class="header-logo">
+                        <a href="index.html"><i class="hidden">heineken</i></a>
+                    </h1>
+                    <ul class="gnb">
+                        <li><a href="brand.html">브랜드</a></li>
+                        <li><a href="products.html">제품</a></li>
+                        <li><a href="events.html">이벤트</a></li>
+                        <li><a href="sponsorships.html">스폰서쉽</a></li>
+                    </ul>
+                    <div class="header-icon">
+                        <button class="lang"><i class="hidden">language</i></button>
+                        <button class="search"><i class="hidden">search</i></button>
+                        <button class="tablet-menu"><i class="hidden">tabletmenu</i></button>
+                    </div>
+                </nav>
             </div>
-            <div class="brewing-flex">
-              <button type="button">
-                <figure><img src="./img/sub-brand-icon1.svg" alt="보리" /></figure>
-                <p>보리</p>
-              </button>
+        </header>
 
-              <button type="button">
-                <figure><img src="./img/sub-brand-icon2.svg" alt="물" /></figure>
-                <p>물</p>
-              </button>
+        <main id="main">
+            <!-- s: sub-visual -->
+            <section class="sub-visual">
+                <div class="inner">
+                    <h2 class="sub-sec-title">Brand</h2>
+                    <strong class="sub-main-title">세계 최고의 프리미엄, 라거 브랜드가 되기까지</strong>
+                </div>
+            </section>
+            <!-- //e: sub-visual -->
 
-              <button type="button">
-                <figure><img src="./img/sub-brand-icon3.svg" alt="홉" /></figure>
-                <p>홉</p>
-              </button>
+            <!-- s: brand-introduction -->
+            <section class="brand-introduction">
+                <div class="inner">
+                    <h3 class="sec-title">Brand Introduction</h3>
+                    <div class="our-title">
+                        <h4 class="main-title">당신의 세상을 열어라</h4>
+                        <p class="sub-title">
+                            하이네켄은 1873년 네덜란드에서 시작되어 150년 이상의 전통을 이어오고 있는 프리미엄 맥주
+                            브랜드입니다. 전 세계 190여 개국에서 사랑받으며, 고유의 A-Yeast 효모와 엄선된 천연 재료만을
+                            사용해 균형 잡힌 맛을 유지해오고 있습니다. 지속 가능한 양조 방식과 환경 보호를 위한 노력을
+                            통해, 미래 세대와 함께하는 맥주 문화를 만들어 가고 있습니다.
+                        </p>
+                    </div>
 
-              <button type="button">
-                <figure><img src="./img/sub-brand-icon4.svg" alt="A-Yeast" /></figure>
-                <p>A-Yeast</p>
-              </button>
+                    <figure>
+                        <img src="./img/sub-brand-banner.jpg" alt="당신의 세상을 열어라" />
+                    </figure>
+                </div>
+            </section>
+            <!-- //e: brand-introduction -->
+
+            <!-- s:logo -->
+            <section class="brand-logo">
+                <div class="inner">
+                    <h3 class="sec-title">LOGO</h3>
+                    <div class="brand-flex">
+                        <div class="our-title">
+                            <h4 class="main-title">전통을 담은 아이코닉 로고</h4>
+                            <p class="sub-title">
+                                하이네켄의 맛을 내는 끈기와 인내심을 상징하는 초록색 라벨, 양조사들의 별
+                                헥사그램(Hexagram)에서 유래한 붉은 색의 오각형 별, 시그니처인 브랜드 고유의 폰트와 웃는
+                                모양을 상징하는 기울어진 e 전통과 상징이 어우러진 하이네켄 로고, 그 안에 담긴 끈기와
+                                열정의 이야기를 담고 있습니다.
+                            </p>
+                        </div>
+                        <figure>
+                            <img src="./img/sub-brand-logo.jpg" alt="전통을 담은 아이코닉 로고" />
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <!-- //e:logo -->
+
+            <!-- s:brewing-item -->
+            <section class="brewing-item">
+                <div class="brewing-bg">
+                    <div class="inner">
+                        <div>
+                            <h3 class="sec-title">Brewing Item</h3>
+                            <div class="our-title">
+                                <h4 class="main-title">완벽한 한 잔을 위해</h4>
+                                <p class="sub-title">자연의 신선함과 양조의 예술이 만난 맥주의 진수.</p>
+                            </div>
+                            <div class="brewing-flex">
+                                <button type="button">
+                                    <figure><img src="./img/sub-brand-icon1.svg" alt="보리" /></figure>
+                                    <p>보리</p>
+                                </button>
+
+                                <button type="button">
+                                    <figure><img src="./img/sub-brand-icon2.svg" alt="물" /></figure>
+                                    <p>물</p>
+                                </button>
+
+                                <button type="button">
+                                    <figure><img src="./img/sub-brand-icon3.svg" alt="홉" /></figure>
+                                    <p>홉</p>
+                                </button>
+
+                                <button type="button">
+                                    <figure><img src="./img/sub-brand-icon4.svg" alt="A-Yeast" /></figure>
+                                    <p>A-Yeast</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //e:brewing-item -->
+
+            <!-- s:brewing-process -->
+            <section class="brewing-process">
+                <div class="inner">
+                    <h3 class="sec-title">Brewing Process</h3>
+                    <div class="brewing-process-flex">
+                        <div class="swiper brewing-text-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide brewing-text">
+                                    <h4 class="main-title">맥아의 풍미를 끌어내다</h4>
+                                    <p class="sub-title">
+                                        맥주의 기본 재료인 맥아를 가공하여 고유의 풍미를 강화합니다. 이 단계에서 맥아는
+                                        열처리 과정을 거쳐 고소한 향과 색을 얻습니다. 이렇게 준비된 맥아는 맥주에 깊은
+                                        맛의 바탕을 형성하며, 본격적인 맥주 제작의 첫걸음을 떼게 됩니다.
+                                    </p>
+                                </div>
+                                <div class="swiper-slide brewing-text">
+                                    <h4 class="main-title">물과 맥아의 만남, 당화</h4>
+                                    <p class="sub-title">
+                                        가공된 맥아와 물을 섞어 당으로 변환하는 당화 과정을 거칩니다. 적절한 온도와
+                                        시간을 조절해 맥주에 적당한 단맛과 풍미를 부여합니다. 이 단계에서 발생한 당분이
+                                        나중에 발효되어 알코올로 변환되며, 맥주의 독특한 맛을 만들기 위한 준비가
+                                        이루어집니다.
+                                    </p>
+                                </div>
+                                <div class="swiper-slide brewing-text">
+                                    <h4 class="main-title">홉 추가로 시원함 더하기</h4>
+                                    <p class="sub-title">
+                                        맥아즙에 홉을 추가해 특유의 쓴맛과 향을 더합니다. 홉은 맥주의 방부제 역할을
+                                        하며, 균형 잡힌 쓴맛과 시원한 향이 맥주의 개성을 결정하는 중요한 요소입니다.
+                                        홉의 종류와 양, 그리고 추가하는 시기에 따라 맥주의 향과 맛이 달라집니다.
+                                    </p>
+                                </div>
+                                <div class="swiper-slide brewing-text">
+                                    <h4 class="main-title">열처리로 맛을 고정하다</h4>
+                                    <p class="sub-title">
+                                        당화가 끝난 맥아즙을 고온으로 가열하여 효소 작용을 멈추고, 잡균을 제거해 위생을
+                                        유지합니다. 이 과정에서 맥아즙의 농도와 맛이 안정화되어 맥주 제조의 기초를
+                                        탄탄하게 다집니다. 열처리는 맥주가 일정한 품질을 유지하도록 돕는 필수적인
+                                        단계입니다.
+                                    </p>
+                                </div>
+                                <div class="swiper-slide brewing-text">
+                                    <h4 class="main-title">하이네켄만의 A-Yeast</h4>
+                                    <p class="sub-title">
+                                        적정한 온도에서 하이네켄의 특별한 에이-이스트(A-Yeast)가 첨가되고, 이를 통해
+                                        자연적으로 발효되며 당분을 알코올과 이산화탄소로 바꾸는 과정이 시작됩니다. 이
+                                        과정이 바로 하이네켄만의 균형 잡힌 맛을 만들어 내는 비결입니다. 우리의
+                                        에이-이스트는 표면이 넓으면 넓을수록 진가를 발휘하기 때문에, 수평형의 넓은 발효
+                                        탱크를 사용합니다.
+                                    </p>
+                                </div>
+                                <div class="swiper-slide brewing-text">
+                                    <h4 class="main-title">숙성과 완성, 깊이를 더하여</h4>
+                                    <p class="sub-title">
+                                        발효된 맥주는 저온에서 일정 기간 숙성하며, 그동안 맥주의 맛이 부드러워지고 향이
+                                        깊어집니다. 숙성 과정은 맥주를 최적의 상태로 만들어주며, 이후 필터링 과정을 통해
+                                        이물질을 제거한 뒤 완성된 맥주는 고객의 테이블에 오를 준비를 마칩니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper brewing-icon-swiper">
+                            <div class="swiper-wrapper brewing-icon-container">
+                                <div class="swiper-slide brewing-icon">
+                                    <figure><img src="./img/brewing-img1.svg" alt="#" /></figure>
+                                </div>
+                                <div class="swiper-slide brewing-icon">
+                                    <figure><img src="./img/brewing-img2.svg" alt="#" /></figure>
+                                </div>
+                                <div class="swiper-slide brewing-icon">
+                                    <figure><img src="./img/brewing-img3.svg" alt="#" /></figure>
+                                </div>
+                                <div class="swiper-slide brewing-icon">
+                                    <figure><img src="./img/brewing-img4.svg" alt="#" /></figure>
+                                </div>
+                                <div class="swiper-slide brewing-icon">
+                                    <figure><img src="./img/brewing-img5.svg" alt="#" /></figure>
+                                </div>
+                                <div class="swiper-slide brewing-icon">
+                                    <figure><img src="./img/brewing-img6.svg" alt="#" /></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //e:brewing-process -->
+        </main>
+
+        <footer id="footer">
+            <div class="inner">
+                <div class="foot-logo"><i class="hidden">heineken</i></div>
+                <address>
+                    <div class="foot-con">
+                        <p>대표자 : 바이니오미카엘크리스티안</p>
+                        <p>주소 : 서울 강남구 테헤란로114길 38, 11층</p>
+                        <p>전화 : 02) 1234-5678</p>
+                        <p class="Copyright">© 2023 Copyright HEINEKEN KOREA INC. All Rights Reserved</p>
+                    </div>
+                    <ul class="foot-sns">
+                        <li><i class="hidden">facebook</i></li>
+                        <li><i class="hidden">instagram</i></li>
+                        <li><i class="hidden">x</i></li>
+                    </ul>
+                </address>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- //e:brewing-item -->
+        </footer>
 
-    <!-- s:brewing-process -->
-    <section class="brewing-process">
-      <div class="inner">
-        <h3 class="sec-title">Brewing Process</h3>
-        <div>
-          <div class="swiper brewing-text-swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide brewing-text">
-                <h4 class="main-title">맥아의 풍미를 끌어내다</h4>
-                <p class="sub-title">
-                  맥주의 기본 재료인 맥아를 가공하여 고유의 풍미를 강화합니다. 이 단계에서 맥아는
-                  열처리 과정을 거쳐 고소한 향과 색을 얻습니다. 이렇게 준비된 맥아는 맥주에 깊은
-                  맛의 바탕을 형성하며, 본격적인 맥주 제작의 첫걸음을 떼게 됩니다.
-                </p>
-              </div>
-              <div class="swiper-slide brewing-text">
-                <h4 class="main-title">물과 맥아의 만남, 당화</h4>
-                <p class="sub-title">
-                  가공된 맥아와 물을 섞어 당으로 변환하는 당화 과정을 거칩니다. 적절한 온도와
-                  시간을 조절해 맥주에 적당한 단맛과 풍미를 부여합니다. 이 단계에서 발생한 당분이
-                  나중에 발효되어 알코올로 변환되며, 맥주의 독특한 맛을 만들기 위한 준비가
-                  이루어집니다.
-                </p>
-              </div>
-              <div class="swiper-slide brewing-text">
-                <h4 class="main-title">홉 추가로 시원함 더하기</h4>
-                <p class="sub-title">
-                  맥아즙에 홉을 추가해 특유의 쓴맛과 향을 더합니다. 홉은 맥주의 방부제 역할을
-                  하며, 균형 잡힌 쓴맛과 시원한 향이 맥주의 개성을 결정하는 중요한 요소입니다.
-                  홉의 종류와 양, 그리고 추가하는 시기에 따라 맥주의 향과 맛이 달라집니다.
-                </p>
-              </div>
-              <div class="swiper-slide brewing-text">
-                <h4 class="main-title">열처리로 맛을 고정하다</h4>
-                <p class="sub-title">
-                  당화가 끝난 맥아즙을 고온으로 가열하여 효소 작용을 멈추고, 잡균을 제거해 위생을
-                  유지합니다. 이 과정에서 맥아즙의 농도와 맛이 안정화되어 맥주 제조의 기초를
-                  탄탄하게 다집니다. 열처리는 맥주가 일정한 품질을 유지하도록 돕는 필수적인
-                  단계입니다.
-                </p>
-              </div>
-              <div class="swiper-slide brewing-text">
-                <h4 class="main-title">하이네켄만의 A-Yeast</h4>
-                <p class="sub-title">
-                  적정한 온도에서 하이네켄의 특별한 에이-이스트(A-Yeast)가 첨가되고, 이를 통해
-                  자연적으로 발효되며 당분을 알코올과 이산화탄소로 바꾸는 과정이 시작됩니다. 이
-                  과정이 바로 하이네켄만의 균형 잡힌 맛을 만들어 내는 비결입니다. 우리의
-                  에이-이스트는 표면이 넓으면 넓을수록 진가를 발휘하기 때문에, 수평형의 넓은 발효
-                  탱크를 사용합니다.
-                </p>
-              </div>
-              <div class="swiper-slide brewing-text">
-                <h4 class="main-title">숙성과 완성, 깊이를 더하여</h4>
-                <p class="sub-title">
-                  발효된 맥주는 저온에서 일정 기간 숙성하며, 그동안 맥주의 맛이 부드러워지고 향이
-                  깊어집니다. 숙성 과정은 맥주를 최적의 상태로 만들어주며, 이후 필터링 과정을 통해
-                  이물질을 제거한 뒤 완성된 맥주는 고객의 테이블에 오를 준비를 마칩니다.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper brewing-icon-swiper">
-            <div class="swiper-wrapper brewing-flex">     
-              <div class="swiper-slide brewing-icon">
-                <figure><img src="./img/brewing-img5.svg" alt="#" /></figure>
-              </div>
-              <div class="swiper-slide brewing-icon">
-                <figure><img src="./img/brewing-img6.svg" alt="#" /></figure>
-              </div>
-              <div class="swiper-slide brewing-icon">
-                <figure><img src="./img/brewing-img1.svg" alt="#" /></figure>
-              </div>
-              <div class="swiper-slide brewing-icon">
-                <figure><img src="./img/brewing-img2.svg" alt="#" /></figure>
-              </div>
-              <div class="swiper-slide brewing-icon">
-                <figure><img src="./img/brewing-img3.svg" alt="#" /></figure>
-              </div>
-              <div class="swiper-slide brewing-icon">
-                <figure><img src="./img/brewing-img4.svg" alt="#" /></figure>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- //e:brewing-process -->
-  </main>
-
-  <footer id="footer">
-    <div class="inner">
-      <div class="foot-logo"><i class="hidden">heineken</i></div>
-      <address>
-        <div class="foot-con">
-          <p>대표자 : 바이니오미카엘크리스티안</p>
-          <p>주소 : 서울 강남구 테헤란로114길 38, 11층</p>
-          <p>전화 : 02) 1234-5678</p>
-          <p class="Copyright">© 2023 Copyright HEINEKEN KOREA INC. All Rights Reserved</p>
-        </div>
-        <ul class="foot-sns">
-          <li><i class="hidden">facebook</i></li>
-          <li><i class="hidden">instagram</i></li>
-          <li><i class="hidden">x</i></li>
-        </ul>
-      </address>
-    </div>
-  </footer>
-
-  <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
-</body>
-
+        <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
+    </body>
 </html>

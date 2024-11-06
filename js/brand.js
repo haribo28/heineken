@@ -1,31 +1,23 @@
-// Swiper 인스턴스 생성
-const brewingTextswiper = new Swiper(".brewing-text-swiper", {
-    direction: "vertical",
-    loop: true,
+// brand-introduction + brand-logo
+gsap.registerPlugin(ScrollTrigger);
+
+const brandTL = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".brand-introduction",
+        start: "top 0%",
+        end: "bottom 0%",
+        scrub: 1,
+        pin: true,
+        markers: true,
+    },
 });
 
-const brewingIconswiper = new Swiper(".brewing-icon-swiper", {
-    direction: "vertical",
-    slidesPerView: 1,
-    loop: true,
-    loopAdditionalSlides: 2,
+brandTL.from(".brand-logo", {
+    y: -1920,
+    duration: 1,
 });
 
-// 슬라이드 변경을 동기화하는 함수
-function syncSwipers(mainSwiper, secondarySwiper) {
-    mainSwiper.on("slideChangeTransitionStart", function () {
-        // 현재 인덱스를 가져와서 다른 Swiper에 적용
-        const newIndex = mainSwiper.realIndex;
-        if (secondarySwiper.realIndex !== newIndex) {
-            secondarySwiper.slideToLoop(newIndex);
-        }
-    });
-}
-
-// 텍스트와 아이콘 Swiper 동기화
-syncSwipers(brewingTextswiper, brewingIconswiper);
-syncSwipers(brewingIconswiper, brewingTextswiper);
-
+// brewing-item
 const $brewingButtons = $(".brewing-flex button");
 const $brewingBg = $(".brewing-bg");
 
@@ -42,3 +34,33 @@ $brewingButtons.on("click", function () {
 
     $brewingBg.css("background", `url(../img/sub-brewing-bg${bgNumber}.jpg)`);
 });
+
+// brewing-text-swiper
+const brewingTextswiper = new Swiper(".brewing-text-swiper", {
+    direction: "vertical",
+    loop: true,
+});
+
+// brewing-icon-swiper
+const brewingIconswiper = new Swiper(".brewing-icon-swiper", {
+    direction: "vertical",
+    slidesPerView: 5,
+    loop: true,
+    spaceBetween: 54,
+    centeredSlides: true,
+});
+
+// 위에 두 슬라이더 합치기
+function syncSwipers(mainSwiper, secondarySwiper) {
+    mainSwiper.on("slideChangeTransitionStart", function () {
+        // 현재 인덱스를 가져와서 다른 Swiper에 적용
+        const newIndex = mainSwiper.realIndex;
+        if (secondarySwiper.realIndex !== newIndex) {
+            secondarySwiper.slideToLoop(newIndex);
+        }
+    });
+}
+
+// 텍스트와 아이콘 Swiper 동기화
+syncSwipers(brewingTextswiper, brewingIconswiper);
+syncSwipers(brewingIconswiper, brewingTextswiper);
