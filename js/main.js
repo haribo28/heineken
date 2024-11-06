@@ -87,8 +87,9 @@ eventTL.to(".events-container", {
 // 음주문화 이미지
 const enimgSwiper = new Swiper(".encouraging-img-swiper", {
     // Optional parameters
-    direction: "horizontal",
+    // direction: "horizontal",
     loop: true,
+    slidesPerView: "auto",
 
     effect: "cards",
     grabCursor: true,
