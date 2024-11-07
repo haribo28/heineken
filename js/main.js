@@ -5,6 +5,7 @@ const storySlider = new Swiper(".story-slider", {
     loop: true,
     autoplay: true, // 자동으로 넘어가기
     speed: 1000, // 속도 (기본값 3000 0.3초)
+    spaceBetween: 40,
 
     // If we need pagination
     pagination: {
@@ -27,6 +28,17 @@ const productsSlider = new Swiper(".products-slider", {
     navigation: {
         nextEl: ".products-slider-wrap .products-next",
         prevEl: ".products-slider-wrap .products-prev",
+    },
+
+    breakpoints: {
+        1000: {
+            slidesPerView: 2, // 1000px 이하에서 보여질 슬라이드 갯수
+            centeredSlides: false, // 모바일에서는 가운데 정렬 해제
+        },
+        500: {
+            slidesPerView: 1, // 500px 이하에서 보여질 슬라이드 갯수
+            centeredSlides: false, // 모바일에서는 가운데 정렬 해제
+        },
     },
 
     // 슬라이드 변경 시 실행되는 콜백
@@ -78,8 +90,9 @@ eventTL.from(".events-container", {
     duration: 1,
     ease: "power2.in",
 });
+
 eventTL.to(".events-container", {
-    y: -1600,
+    y: -800,
     duration: 1.5,
     ease: "power1.Out",
 });

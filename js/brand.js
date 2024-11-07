@@ -1,20 +1,15 @@
-// brand-introduction + brand-logo
-gsap.registerPlugin(ScrollTrigger);
+// 영역별로 스크롤트리거 설정
+const sectionEl = gsap.utils.toArray(".brand");
 
-const brandTL = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".brand-introduction",
-        start: "top 0%",
-        end: "bottom 0%",
-        scrub: 1,
-        pin: true,
-        markers: true,
-    },
-});
-
-brandTL.from(".brand-logo", {
-    y: -1920,
-    duration: 1,
+sectionEl.forEach((sec) => {
+    ScrollTrigger.create({
+        trigger: sec,
+        // markers: true,
+        start: "top top",
+        end: "bottom top",
+        pin: true, // 영역을 고정
+        pinSpacing: false, // 고정된 핀 사이에 보이는 여백을 없애라
+    });
 });
 
 // brewing-item

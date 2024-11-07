@@ -4,10 +4,20 @@
     margin-top: 3rem;
 }
 
+.brand-introduction .sec-title {
+    margin: 0;
+    padding-top: 21.3rem;
+}
+
 /* logo */
 .brand-logo {
     background: #fff;
-    padding: 4rem;
+    height: 950px;
+    padding-top: 21.3rem;
+}
+
+.brand-logo .sec-title {
+    margin: 0;
 }
 
 .brand-logo figure {
@@ -27,6 +37,11 @@
 }
 
 /* brewing-item */
+
+.brewing-item {
+    margin-top: 950px;
+}
+
 .brewing-bg {
     background: url(../img/sub-brewing-bg1.jpg);
     width: 100%;

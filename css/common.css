@@ -244,3 +244,32 @@ address {
     opacity: 1;
     bottom: 15rem;
 }
+
+@media screen and (max-width: 1280px) {
+    .inner {
+        width: 90%;
+    }
+
+    .gnb {
+        display: none;
+    }
+
+    .tablet-menu {
+        display: block;
+        background: url(../img/gnb-menu.svg);
+        width: 2.9rem;
+        height: 2.9rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .foot-logo {
+        margin: 0 auto;
+    }
+
+    address {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+}
