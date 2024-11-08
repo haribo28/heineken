@@ -1,8 +1,8 @@
 @charset 'utf-8';
 
 #header {
+    height: 100%;
     background: var(--main-color);
-    width: 100%;
 }
 
 nav {
@@ -127,7 +127,7 @@ nav {
 
 .product-item {
     width: 45.3rem;
-    height: 67.5rem;
+    height: 70rem;
 }
 
 .product-item figure {
@@ -180,8 +180,8 @@ nav {
 .events {
     background: var(--main-color);
     margin-top: 24rem;
-    padding: 5rem 0;
-    height: 110rem;
+    padding: 5rem 0 0;
+    height: 150rem;
 }
 
 .events .inner {
@@ -201,24 +201,29 @@ nav {
 }
 
 .event-flex {
-    height: 200px;
     display: flex;
-    gap: 13rem;
+    justify-content: center;
+    /* gap: 13rem; */
+}
+
+.event-flex .our-title {
+    flex: 0 1 40%;
 }
 
 .events-container {
-    width: 45.3rem;
-    /* width: 28.3%; */
+    /* width: 1013px; */
+    /* height: 2073px; */
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 10.7rem;
-    /* overflow: hidden; */
-    aspect-ratio: 1 / 1.87;
+    flex: 0 1 60%;
 }
 
 .events-container ul {
-    /* width: 100%; */
-    /* height: 100%; */
+    max-width: 453px;
+    display: flex;
+    flex-direction: column;
+    gap: 13rem;
 }
 
 .events-container ul:nth-child(1) {
@@ -226,22 +231,13 @@ nav {
 }
 
 .events-con {
-    aspect-ratio: 1 / 1.87;
-    height: 821.5px;
-    display: block;
-    margin-bottom: 13.6%;
     background: var(--main-color);
-    border-radius: 10px;
     padding: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.events-con a {
-    display: block;
-}
-
-.events-con figure {
-    /* width: 45.3rem; */
-    height: 61rem;
+.events-con a figure {
     border-radius: 6px;
     overflow: hidden;
 }
@@ -250,14 +246,12 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 6rem;
-    margin-top: 4rem;
-    /* width: 419px; */
+    margin-top: 3rem;
 }
 
 .event-icon {
     background: url(../img/event-arrow.svg);
-    /* width: 3rem; */
+
     aspect-ratio: 1/1;
     height: 2.9rem;
 }
@@ -281,7 +275,6 @@ nav {
 
 .encouraging-wrap {
     display: flex;
-    gap: 11.1rem;
     /* background: tomato; */
 }
 
@@ -328,9 +321,9 @@ nav {
 }
 
 .encouraging-img-swiper {
-    /* border: 1px solid #00f; */
     width: 57.2rem;
-    height: 70.4rem;
+    /* height: 70.4rem; */
+    aspect-ratio: 1/1.23;
 }
 
 .encouraging-img figure {
@@ -439,27 +432,38 @@ video {
         right: 2rem;
     }
 
-    /* Events */
-    .events .inner {
-        width: 90%;
+    .product-text p {
+        padding: 0;
     }
 
-    .events-container ul:nth-child(1) {
-        transform: none;
+    /* Events */
+
+    .events .inner {
+        width: 83.9%;
     }
 
     .events-container {
         flex-direction: column;
     }
 
+    .events-container ul {
+        gap: 0;
+    }
+
+    .events-container ul:nth-child(1) {
+        transform: none;
+    }
+
+    .events-con {
+        margin-top: 10rem;
+    }
+
     /* Encouraging */
-    .encouraging-responsibility .inner {
+
+    .encouraging-wrap {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    .encouraging-wrap {
         flex-direction: column-reverse;
         gap: 6rem;
         /* max-width: 61.2rem; */
@@ -467,8 +471,8 @@ video {
         width: 100%;
     }
 
-    .encouraging-con-swiper {
-        aspect-ratio: 1/0.6;
+    .encouraging-img-swiper {
+        margin-top: 5rem;
     }
 
     .encouraging-text {
@@ -481,14 +485,27 @@ video {
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     #header {
         height: 50rem;
+    }
+
+    .event-flex {
+        flex-direction: column;
     }
 
     .events-container li {
         display: block;
         margin-bottom: 7rem;
+    }
+
+    .encouraging-img-swiper {
+        margin-top: 5rem;
+        width: 45rem;
+    }
+
+    .encouraging-con-swiper {
+        width: 50rem;
     }
 
     .banner-con p:nth-child(1) {
@@ -502,5 +519,57 @@ video {
 
     .warring {
         margin-top: 28rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #header {
+        height: 40rem;
+    }
+
+    .story-con dl dd {
+        font-size: 1.8rem;
+    }
+
+    .encouraging-img-swiper {
+        width: 30rem;
+    }
+
+    .encouraging-text > figure {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+
+    .encouraging-con-swiper {
+        width: 35rem;
+    }
+
+    .encouraging-text dl dt {
+        font-size: 3rem;
+    }
+
+    .encouraging-text dl dd {
+        font-size: 1.8rem;
+    }
+
+    .banner-con {
+        text-align: center;
+        top: 10%;
+        right: 0%;
+    }
+
+    .banner-con p:nth-child(1) {
+        font-size: 2rem;
+    }
+
+    .banner-title {
+        font-size: 6rem;
+        line-height: 7rem;
+    }
+
+    .warring {
+        margin-top: 33rem;
+        font-size: 1.5rem;
+        padding: 0 6rem;
     }
 }

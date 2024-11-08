@@ -20,9 +20,9 @@ const productsSlider = new Swiper(".products-slider", {
     direction: "horizontal",
     loop: true,
 
-    slidesPerView: 3, // 보여질 슬라이드 갯수
+    slidesPerView: 1, // 보여질 슬라이드 갯수
     spaceBetween: 20, // 간격
-    centeredSlides: true, // 첫번째 슬라이드를 가운데로
+    centeredSlides: false, // 모바일에서는 가운데 정렬 해제
 
     // Navigation arrows
     navigation: {
@@ -32,11 +32,11 @@ const productsSlider = new Swiper(".products-slider", {
 
     breakpoints: {
         1000: {
-            slidesPerView: 2, // 1000px 이하에서 보여질 슬라이드 갯수
-            centeredSlides: false, // 모바일에서는 가운데 정렬 해제
+            slidesPerView: 3, // 1000px 이하에서 보여질 슬라이드 갯수
+            centeredSlides: true, // 첫번째 슬라이드를 가운데로
         },
-        500: {
-            slidesPerView: 1, // 500px 이하에서 보여질 슬라이드 갯수
+        700: {
+            slidesPerView: 2, // 500px 이하에서 보여질 슬라이드 갯수
             centeredSlides: false, // 모바일에서는 가운데 정렬 해제
         },
     },
@@ -79,7 +79,17 @@ const eventTL = gsap.timeline({
         scrub: 2,
         pin: true,
         pinSpacing: true,
-        markers: true,
+        // markers: true,
+        onEnter: function () {
+            const $eventsContainer = $(".events-container");
+            const containerHeight = $eventsContainer.outerHeight() - 600;
+
+            eventTL.to($eventsContainer[0], {
+                y: -containerHeight,
+                duration: 1,
+                ease: "power1.Out",
+            });
+        },
     },
 });
 
@@ -89,12 +99,6 @@ eventTL.from(".events-container", {
     autoAlpha: 0,
     duration: 1,
     ease: "power2.in",
-});
-
-eventTL.to(".events-container", {
-    y: -800,
-    duration: 1.5,
-    ease: "power1.Out",
 });
 
 // 음주문화 이미지
