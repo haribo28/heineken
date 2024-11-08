@@ -1,3 +1,5 @@
+AOS.init();
+
 // 스토리
 const storySlider = new Swiper(".story-slider", {
     // Optional parameters
@@ -97,7 +99,7 @@ const eventTL = gsap.timeline({
 eventTL.from(".events-container", {
     y: 200,
     autoAlpha: 0,
-    duration: 2.5,
+    duration: 1,
     ease: "power2.in",
 });
 
