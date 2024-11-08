@@ -86,7 +86,7 @@ const eventTL = gsap.timeline({
 
             eventTL.to($eventsContainer[0], {
                 y: -containerHeight,
-                duration: 1,
+                duration: 2.5,
                 ease: "power1.Out",
             });
         },
@@ -97,7 +97,7 @@ const eventTL = gsap.timeline({
 eventTL.from(".events-container", {
     y: 200,
     autoAlpha: 0,
-    duration: 1,
+    duration: 2.5,
     ease: "power2.in",
 });
 
