@@ -1,5 +1,3 @@
-AOS.init();
-
 // 스토리
 const storySlider = new Swiper(".story-slider", {
     // Optional parameters
