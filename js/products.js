@@ -37,3 +37,7 @@ productBtns.forEach((btn, index) => {
         }
     });
 });
+
+AOS.init();
+
+Splitting();

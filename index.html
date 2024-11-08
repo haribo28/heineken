@@ -26,14 +26,16 @@
 
         <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
 
-        <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+        <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/common.css" />
         <link rel="stylesheet" href="./css/main.css" />
 
         <script src="./js/jquery-3.7.1.min.js"></script>
-        <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+        <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
@@ -44,22 +46,28 @@
     <body>
         <a href="#main" class="hidden">본문 바로가기</a>
 
-        <header id="header">
+        <header id="header" data-aos="fade-down">
             <div class="inner">
                 <nav>
-                    <h1 class="header-logo">
+                    <h1 class="header-logo" data-aos="fade-down" data-aos-delay="400">
                         <a href="index.html"><i class="hidden">heineken</i></a>
                     </h1>
                     <ul class="gnb">
-                        <li><a href="brand.html">브랜드</a></li>
-                        <li><a href="products.html">제품</a></li>
-                        <li><a href="events.html">이벤트</a></li>
-                        <li><a href="sponsorships.html">스폰서쉽</a></li>
+                        <li data-aos="fade-down" data-aos-delay="600"><a href="brand.html">브랜드</a></li>
+                        <li data-aos="fade-down" data-aos-delay="700"><a href="products.html">제품</a></li>
+                        <li data-aos="fade-down" data-aos-delay="800"><a href="events.html">이벤트</a></li>
+                        <li data-aos="fade-down" data-aos-delay="900"><a href="sponsorships.html">스폰서쉽</a></li>
                     </ul>
                     <div class="header-icon">
-                        <button class="lang"><i class="hidden">language</i></button>
-                        <button class="search"><i class="hidden">search</i></button>
-                        <button class="tablet-menu"><i class="hidden">tabletmenu</i></button>
+                        <button class="lang" data-aos="fade-down" data-aos-delay="1000">
+                            <i class="hidden">language</i>
+                        </button>
+                        <button class="search" data-aos="fade-down" data-aos-delay="1100">
+                            <i class="hidden">search</i>
+                        </button>
+                        <button class="tablet-menu" data-aos="fade-down" data-aos-delay="1200">
+                            <i class="hidden">tabletmenu</i>
+                        </button>
                     </div>
                 </nav>
             </div>
@@ -68,8 +76,8 @@
         <main id="main">
             <!-- s:visual -->
             <section class="visual">
-                <h2 class="visual-title">HEINEKEN</h2>
-                <figure>
+                <h2 class="visual-title" data-splitting>HEINEKEN</h2>
+                <figure data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="1800">
                     <img src="./img/main-visual.png" alt="heineken" />
                 </figure>
             </section>
@@ -78,9 +86,11 @@
             <!-- s:our-story -->
             <section class="our-story">
                 <div class="inner">
-                    <h3 class="sec-title">Our Story</h3>
-                    <h4 class="main-title">세계 최고의 프리미엄,<br />라거 브랜드가 되기까지</h4>
-                    <div class="story-slider-wrap">
+                    <h3 class="sec-title" data-aos="fade-up" data-aos-delay="400">Our Story</h3>
+                    <h4 class="main-title" data-aos="fade-up" data-aos-delay="600">
+                        세계 최고의 프리미엄,<br />라거 브랜드가 되기까지
+                    </h4>
+                    <div class="story-slider-wrap" data-aos="fade-up" data-aos-delay="700">
                         <div class="swiper story-slider">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide story-con">
@@ -215,12 +225,16 @@
             <!-- s:our-products -->
             <section class="our-products">
                 <div class="inner">
-                    <h3 class="sec-title">Our Products</h3>
+                    <h3 class="sec-title" data-aos="fade-up" data-aos-delay="400">Our Products</h3>
                     <div class="our-title">
-                        <h4 class="main-title">별, 그 이상의 가치</h4>
-                        <p class="sub-title">아이코닉한 맥주 브랜드의 대명사, 하이네켄.</p>
+                        <h4 class="main-title" data-aos="fade-up" data-aos-delay="600">별, 그 이상의 가치</h4>
+                        <p class="sub-title" data-aos="fade-up" data-aos-delay="650">
+                            아이코닉한 맥주 브랜드의 대명사, 하이네켄.
+                        </p>
                     </div>
-                    <div class="products-slider-wrap">
+                    <div class="products-slider-wrap" data-aos="fade-up" data-aos-delay="700">
+                        <button type="button" class="products-prev"></button>
+                        <button type="button" class="products-next"></button>
                         <div class="swiper products-slider">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide product-item">
@@ -286,8 +300,6 @@
                             </div>
                         </div>
                         <!-- 커스텀 버튼 -->
-                        <button type="button" class="products-prev"></button>
-                        <button type="button" class="products-next"></button>
                     </div>
                 </div>
             </section>
@@ -296,11 +308,11 @@
             <!-- s:events -->
             <section class="events">
                 <div class="inner">
-                    <h3 class="sec-title">Events</h3>
+                    <h3 class="sec-title" data-aos="fade-up" data-aos-delay="400">Events</h3>
                     <div class="event-flex">
                         <div class="our-title">
-                            <h4 class="main-title">하이네켄의 마법</h4>
-                            <p class="sub-title">
+                            <h4 class="main-title" data-aos="fade-up" data-aos-delay="600">하이네켄의 마법</h4>
+                            <p class="sub-title" data-aos="fade-up" data-aos-delay="650">
                                 맥주의 품질과 맛을 전달하는 데만 그쳤다면 그것은 하이네켄의 방식이 아니죠.
                             </p>
                         </div>
@@ -382,10 +394,10 @@
             <!-- s:encouraging-responsibility -->
             <section class="encouraging-responsibility">
                 <div class="inner">
-                    <h3 class="sec-title">Encouraging responsibility</h3>
-                    <h4 class="main-title">책임감 있는 음주 문화</h4>
+                    <h3 class="sec-title" data-aos="fade-up" data-aos-delay="400">Encouraging responsibility</h3>
+                    <h4 class="main-title" data-aos="fade-up" data-aos-delay="600">책임감 있는 음주 문화</h4>
                     <div class="encouraging-wrap">
-                        <div class="swiper encouraging-con-swiper">
+                        <div class="swiper encouraging-con-swiper" data-aos="fade-up" data-aos-delay="700">
                             <div class="swiper-wrapper encouraging-con-wrapper">
                                 <div class="swiper-slide encouraging-text">
                                     <figure><img src="./img/encouraging-icon1.svg" alt="#" /></figure>
@@ -440,7 +452,7 @@
                             </div>
                         </div>
 
-                        <div class="swiper encouraging-img-swiper">
+                        <div class="swiper encouraging-img-swiper" data-aos="fade-up" data-aos-delay="800">
                             <div class="swiper-wrapper encouraging-img">
                                 <figure class="swiper-slide">
                                     <img src="./img/encouraging-img1.jpg" alt="속을 든든히 채우세요." />
@@ -470,9 +482,9 @@
             <section class="banner">
                 <video src="./video/banner-video.mp4" muted autoplay loop></video>
                 <div class="banner-con">
-                    <p>If you’re driving,</p>
-                    <strong class="banner-title">Don’t drink<br />this.</strong>
-                    <p class="warring">
+                    <p data-aos="fade-up" data-aos-delay="400">If you’re driving,</p>
+                    <strong class="banner-title" data-aos="fade-up" data-aos-delay="600">Don’t drink<br />this.</strong>
+                    <p class="warring" data-aos="fade-up" data-aos-delay="700">
                         경고: 지나친 음주는 뇌졸중, 기억력 손상이나 치매를 유발합니다.<br />임신 중 음주는 기형아 출생
                         위험을 높입니다. 만 19세 미만 컨텐츠 공유 금지.
                     </p>

@@ -21,8 +21,9 @@
 }
 
 .brand-logo figure {
-    width: 32rem;
-    height: 32rem;
+    /* width: 32rem; */
+    /* height: 32rem; */
+    aspect-ratio: 1/1;
 }
 
 .brand-flex {
@@ -45,7 +46,8 @@
 .brewing-bg {
     background: url(../img/sub-brewing-bg1.jpg);
     width: 100%;
-    height: 96.5rem;
+    /* height: 965px; */
+    aspect-ratio: 1/0.5;
     transition: 0.4s;
 }
 
@@ -72,7 +74,7 @@
 
 .brewing-flex button {
     width: 25rem;
-    height: 25rem;
+    aspect-ratio: 1/1;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 50%;
     display: flex;
@@ -83,6 +85,7 @@
     cursor: pointer;
     border: 3px solid transparent;
     transition: 0.4s;
+    flex: 0 1 20%;
 }
 
 .brewing-flex button:active,
@@ -167,4 +170,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 1280px) {
+    .inner {
+        width: 90%;
+    }
 }

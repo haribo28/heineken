@@ -59,3 +59,7 @@ function syncSwipers(mainSwiper, secondarySwiper) {
 // 텍스트와 아이콘 Swiper 동기화
 syncSwipers(brewingTextswiper, brewingIconswiper);
 syncSwipers(brewingIconswiper, brewingTextswiper);
+
+AOS.init();
+
+Splitting();

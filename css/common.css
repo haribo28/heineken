@@ -61,7 +61,8 @@ a:hover {
 
 #header {
     background: var(--main-color);
-    height: 14.5rem;
+    height: 40rem;
+    position: relative;
 }
 
 .inner {
@@ -155,9 +156,10 @@ nav .header-logo {
 
 /* visual */
 .sub-visual {
-    background: var(--main-color);
-    padding-top: 7rem;
-    padding-bottom: 7.6rem;
+    /* background: var(--main-color); */
+    position: absolute;
+    top: 22%;
+    left: 13%;
 }
 
 .sub-sec-title {

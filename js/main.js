@@ -74,7 +74,7 @@ gsap.registerPlugin(ScrollTrigger);
 const eventTL = gsap.timeline({
     scrollTrigger: {
         trigger: ".events",
-        start: window.innerWidth >= 1280 ? "top 20%" : "top 0%",
+        start: "top 0%",
         end: "bottom -100%",
         scrub: 2,
         pin: true,
@@ -87,7 +87,7 @@ const eventTL = gsap.timeline({
             eventTL.to($eventsContainer[0], {
                 y: -containerHeight,
                 duration: 2.5,
-                ease: "power1.Out",
+                ease: "power2.Out",
             });
         },
     },
@@ -132,3 +132,7 @@ enimgSwiper.on("slideChange", function () {
     idx = enimgSwiper.realIndex;
     enconSwiper.slideToLoop(idx);
 });
+
+AOS.init();
+
+Splitting();
