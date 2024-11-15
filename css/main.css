@@ -427,6 +427,58 @@ video {
     }
 }
 
+.mobile-menu.active {
+    left: 0;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    background: var(--main-color);
+    color: #fff;
+
+    transition: 0.4s cubic-bezier(1, 0.35, 0.38, 0.99);
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
+    padding-top: 11rem;
+}
+
+.mobile-logo {
+    display: block;
+    width: 25rem;
+    height: 10rem;
+    background: url(../img/gnb-logo.svg) no-repeat 50% / contain;
+}
+
+.mobile-gnb {
+    margin-top: 6.5rem;
+}
+
+.mobile-gnb li a {
+    font-weight: 700;
+    font-size: 2rem;
+    display: block;
+    padding: 1.6rem 0;
+    text-align: center;
+}
+
+.btn-close {
+    position: absolute;
+    top: 2.2rem;
+    right: 2rem;
+    width: 4.8rem;
+    height: 4.8rem;
+    background: url(../img/ico-close.svg) no-repeat 50%;
+}
+
 /* 반응형 */
 @media screen and (max-width: 1280px) {
     #header {

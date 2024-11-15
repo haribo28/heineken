@@ -133,6 +133,20 @@ enimgSwiper.on("slideChange", function () {
     enconSwiper.slideToLoop(idx);
 });
 
+const tabletMenu = document.querySelector(".tablet-menu");
+const btnClose = document.querySelector(".btn-close");
+const mobileMenu = document.querySelector(".mobile-menu");
+
+tabletMenu.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active");
+});
+
+// 대상.classList.remove('클래스명')
+
+btnClose.addEventListener("click", () => {
+    mobileMenu.classList.remove("active");
+});
+
 AOS.init();
 
 Splitting();
