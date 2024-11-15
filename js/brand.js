@@ -27,7 +27,7 @@ $brewingButtons.on("click", function () {
     const index = $brewingButtons.index(this);
     const bgNumber = index + 1;
 
-    $brewingBg.css("background", `url(../img/sub-brewing-bg${bgNumber}.jpg)`);
+    $brewingBg.css("background", `url(https://haribo28.github.io/heineken/img/sub-brewing-bg${bgNumber}.jpg)`);
 });
 
 // brewing-text-swiper
