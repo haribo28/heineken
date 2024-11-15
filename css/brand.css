@@ -1,179 +1,205 @@
 @charset 'utf-8';
 
 .brand-introduction figure {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 .brand-introduction .sec-title {
-    margin: 0;
-    padding-top: 21.3rem;
+  margin: 0;
+  padding-top: 21.3rem;
 }
 
 /* logo */
 .brand-logo {
-    background: #fff;
-    height: 950px;
-    padding-top: 21.3rem;
+  background: #fff;
+  height: 950px;
+  padding-top: 21.3rem;
 }
 
 .brand-logo .sec-title {
-    margin: 0;
+  margin: 0;
 }
 
 .brand-logo figure {
-    /* width: 32rem; */
-    /* height: 32rem; */
-    aspect-ratio: 1/1;
+  /* width: 32rem; */
+  /* height: 32rem; */
+  aspect-ratio: 1/1;
 }
 
 .brand-flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 23.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 23.7rem;
 }
 
 .brand-logo .our-title {
-    width: 69rem;
+  width: 69rem;
 }
 
 /* brewing-item */
 
 .brewing-item {
-    margin-top: 950px;
+  margin-top: 950px;
 }
 
 .brewing-bg {
-    background: url(../img/sub-brewing-bg1.jpg);
-    width: 100%;
-    /* height: 965px; */
-    aspect-ratio: 1/0.5;
-    transition: 0.4s;
+  background: url(../img/sub-brewing-bg1.jpg);
+  width: 100%;
+  /* height: 965px; */
+  aspect-ratio: 1/0.5;
+  transition: 0.4s;
 }
 
 .brewing-item h3 {
-    color: #fff;
-    padding-top: 11.2rem;
+  color: #fff;
+  padding-top: 11.2rem;
 }
 
 .brewing-item h4 {
-    color: #fff;
+  color: #fff;
 }
 
 .brewing-item .sub-title {
-    color: #fff;
+  color: #fff;
 }
 
 .brewing-flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 9.6rem;
-    gap: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9.6rem;
+  gap: 5rem;
 }
 
 .brewing-flex button {
-    width: 25rem;
-    aspect-ratio: 1/1;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    cursor: pointer;
-    border: 3px solid transparent;
-    transition: 0.4s;
-    flex: 0 1 20%;
+  width: 25rem;
+  aspect-ratio: 1/1;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: 0.4s;
+  flex: 0 1 20%;
 }
 
 .brewing-flex button:active,
 .brewing-flex button.active {
-    border: 3px solid #fff;
+  border: 3px solid #fff;
 }
 
 .brewing-flex figure {
-    width: 8rem;
-    height: 8rem;
+  width: 8rem;
+  height: 8rem;
 }
 
 .brewing-flex p {
-    font-weight: 600;
-    font-size: 2.5rem;
-    color: #fff;
-    margin-top: 2rem;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #fff;
+  margin-top: 2rem;
 }
 
 .brewing-flex figure img {
-    object-fit: contain;
+  object-fit: contain;
 }
 
 .brewing-text {
-    width: 71rem;
+  width: 71rem;
 }
 
 .brewing-text-swiper {
-    width: 71rem;
-    height: 31rem;
-    overflow: hidden;
+  width: 71rem;
+  height: 31rem;
+  overflow: hidden;
 }
 
 /* 양조과정 아이콘 */
 
 .brewing-icon-swiper {
-    width: 13rem;
-    height: 91rem;
-    /* overflow: visible; */
+  width: 13rem;
+  height: 91rem;
+  /* overflow: visible; */
 }
 
 .brewing-icon-swiper .brewing-icon-container {
-    height: 12rem !important;
+  height: 12rem !important;
 }
 
 .brewing-icon-swiper .swiper-slide {
-    height: 13rem !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 13rem !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brewing-icon-swiper .swiper-slide figure {
+  position: relative;
+}
+
+.brewing-icon-swiper .swiper-slide figure img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.4s;
+  width: 70px;
+  height: 70px;
+}
+
+.brewing-icon-swiper .swiper-slide figure img + img {
+  opacity: 0;
+}
+
+.brewing-icon-swiper .swiper-slide.swiper-slide-active figure img {
+  opacity: 0;
+}
+
+.brewing-icon-swiper .swiper-slide.swiper-slide-active figure img + img {
+  opacity: 1;
 }
 
 .brewing-icon {
-    width: 13rem;
-    height: 13rem;
-    border: 3px solid var(--main-color);
-    border-radius: 50%;
-    padding: 3.5rem;
-    cursor: pointer;
+  width: 13rem;
+  height: 13rem;
+  border: 3px solid var(--main-color);
+  border-radius: 50%;
+  padding: 3.5rem;
+  cursor: pointer;
 }
 
 .brewing-icon figure img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .brewing-icon.swiper-slide-active {
-    width: 13rem;
-    height: 13rem;
-    background: var(--main-color);
-    border-radius: 50%;
-    padding: 3.5rem;
-    cursor: pointer;
+  width: 13rem;
+  height: 13rem;
+  background: var(--main-color);
+  border-radius: 50%;
+  padding: 3.5rem;
+  cursor: pointer;
 }
 
 .swiper-slide {
-    height: auto !important;
+  height: auto !important;
 }
 
 .brewing-process-flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 1280px) {
-    .inner {
-        width: 90%;
-    }
+  .inner {
+    width: 90%;
+  }
 }
